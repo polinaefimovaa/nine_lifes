@@ -1,4 +1,20 @@
 $(document).ready(function(){
+    // меню
+    $(".menu_button").click(function(){
+        if ($(".menu").hasClass("none")) {
+            $(".menu").removeClass("none");
+            $(".menu").addClass("exist");
+            $("div").css({'opacity': '0.3'});
+            $(".line_1 > div, .line_1, .line0").css({'opacity': '1'});
+            $(".menu").css({'opacity': '1'});
+        }
+        else if ($(".menu").hasClass("exist")) {
+                $(".menu").removeClass("exist");
+                $(".menu").addClass("none");
+                $("div").css({'opacity': '1'});
+        }
+    });
+    
     // ГЛАВНАЯ СТРАНИЦА
 
     // кнопки

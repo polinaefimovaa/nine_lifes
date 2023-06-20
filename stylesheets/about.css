@@ -598,4 +598,34 @@
         height: 1.5vw;
         width: 100%;
     }
+    /* меню */
+    .me {
+        margin-top: -424.8vw;
+        margin-left: 75.3vw;
+        height: 15.3vw;
+        width: 24.03vw;
+        padding: 2.4vw 0;
+    }
+    .me > a {
+        font-size: 1.55vw;
+        letter-spacing: -0.03vw;
+        font-weight: 400;
+        text-decoration: none;
+        display: block;
+        margin-left: 3.2vw;
+        margin-top: 2.8vw;
+        border-bottom: 0.12vw solid white;
+        width: 9.3vw;
+        height: 1.4vw;
+    }
+    .me > a:nth-of-type(1) {
+        margin-top: 0vw;
+        width: 9vw;
+    }
+    .none {
+        display: none;
+    }
+    .exist {
+        display: block;
+    }
 }
