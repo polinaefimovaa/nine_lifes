@@ -1,0 +1,597 @@
+@media all and (min-width: 1280px) {
+    a, .b0, .right_tablo_1 > div:nth-of-type(2), .button_m > div, .back, .forward{
+        cursor: url('../images/active_cursor.png'), auto;
+    }
+}
+@media all and (min-width: 835px) {  
+    h1 {
+        font-size: 1.6vw;
+        letter-spacing: -0.05vw;
+        line-height: 104%;
+    }
+    h2 {
+        font-size: 1.1vw;
+        letter-spacing: -0.039vw;
+        line-height: 158%;
+    }
+    .photo, .about_text, .line_2 > div:nth-of-type(1), .control, .control_1, .air, .land, .water, .fire, .magazine, .line_3 > div:nth-of-type(1) {
+        margin-left: 0.6vw;
+    }
+    .control_room_photo {
+        border: 0.2vw solid #0076BE;
+    }
+    /* первая анимированная линия */
+    .line_1 {
+        height: 2.1vw;
+        padding: 0.5vw 0;
+    }
+    .line_1 > div:nth-of-type(1), .line_1 > div:nth-of-type(3) {
+        width: 17.13vw;
+        padding: 0.2vw 0;
+        height: 1.7vw;
+    }
+    .line1 > div {
+        height: 100%;
+    }
+    .line_1 > div:nth-of-type(2) {
+        width: 87.7vw;
+    }
+    .line_1 > div:nth-of-type(3) {
+        margin-right: 0.6vw;
+    }
+    .line_1 > div > h1 {
+        margin-left: 0.2vw
+    }
+    .line_1 > div:nth-of-type(3) > h1 {
+        margin-left: 9.35vw;    
+    }
+    /* картинки на весь экран с общим планом пространства */
+    .photo {
+        width: 98.7vw;
+        height: 56.32vw;
+        margin-top: 0.6vw;
+        background: url(../images/photo.svg);
+        background-size: cover;
+        padding: 1.31vw 0;
+    }
+    .photo > div:nth-of-type(1){
+        width: 96.1vw;
+        height: 56.49vw;
+        background: url(../images/exterior.svg);
+        background-position: 0vw;
+        background-size: cover;
+        margin-left: 1.34vw;
+        transition: .5s;
+    }
+    .photo > div:nth-of-type(2) > p, .control_room_photo > div > p {
+        font-size: 5vw;
+        margin-top: -30.8vw;
+    }
+    .photo > div:nth-of-type(2), .control_room_photo > div{
+        display: flex;
+    }
+    .back {
+        margin-left: 1.7vw;
+    }
+    .forward {
+        margin-left: 89.6vw;
+    }
+    /* информация об агентстве */
+    .about_text {
+        width: 98.7vw;
+        height: 16.46vw;
+        margin-top: 1.2vw;
+        display: flex;
+    }
+    .about_text > div {
+        height: 69.6%;
+        padding: 2.55vw 0;
+    }
+    .about_text > div:nth-of-type(1) {
+        width: 34.7vw;
+        background: url(../images/about_text1.svg);
+        background-size: cover;
+    }    
+    .about_text > div:nth-of-type(2), .about_text > div:nth-of-type(3) {
+        width: 31.13vw;
+        margin-left: 0.9vw;
+    }
+    .about_text > div:nth-of-type(2) {
+       
+        background: url(../images/about_text2.svg);
+        background-size: cover;
+    }
+    .about_text > div:nth-of-type(3) {
+        background: url(../images/about_text2.svg);
+        background-size: cover;
+    }
+    .about_text > div > h1, .about_text > div > h2 {
+        margin-left: 2.94vw;
+    }
+    .about_text > div > h2 {
+        margin-top: 1.1vw;
+    }
+    /* анимированная линия */
+    .line_2, .line_3 {
+        height: 1.3vw;
+        margin-top: 0.7vw;
+    }
+    .line_2 > div, .control_photo > div, .left_tablo_2 > div:nth-of-type(2) > div, .air > div:nth-of-type(2) > div, .air > div:nth-of-type(3) > div, .land > div:nth-of-type(1) > div, .land > div:nth-of-type(2) > div, .right_tablo_2 > div:nth-of-type(2) > div, .left_tablo_3 > div:nth-of-type(2) > div, .water > div:nth-of-type(2) > div, .water > div:nth-of-type(3) > div, .fire > div:nth-of-type(2) > div, .magazine > div:nth-of-type(1) > div, .line_3 > div{
+        border: 0.2vw solid #0076BE;
+    }
+    .line_2 > div:nth-of-type(1), .line_2 > div:nth-of-type(3), .line_3 > div:nth-of-type(1), .line_3 > div:nth-of-type(3) {
+        width: 3.3vw;
+    }
+    .line_2 > div:nth-of-type(2), .line_3 > div:nth-of-type(2) {
+        width: 90.5vw;
+    }
+    /* диспетчерская */
+    .text_1 {
+        width: 100vw;
+        height: 8.8vw;
+        margin-top: 1vw;
+        margin-left: 0.6vw;
+        display: flex;
+    }
+    .t_1{
+        width: 51.91vw;
+        height: 47.9%;
+        background: url(../images/t_1.svg);
+        background-size: cover;
+        padding: 2.3vw 0;
+    }
+    .t_1 > h1 {
+        margin-left: 3vw;
+        line-height: 115%;
+    }
+    .b_1{
+        width: 45.5vw;
+        height: 60%;
+        background: url(../images/b_1.svg);
+        background-size: cover;
+        margin-left: 1.1vw;
+        padding: 1.64vw 0;
+    }
+    .button_01, .polzunok_1 {
+        margin-left: 3.02vw;
+    }
+    .button_01 {
+        height: 2.6vw;
+        width: 40vw;
+        display: flex;
+    }
+    .button_01 > div {
+        width: 3.47vw;
+        margin-left: 1.1vw;
+    }
+    .button_01 > div:hover, .button_02 > div:hover, .button_03 > div:hover {
+        border: 0.31vw solid #D65B34;
+        transition: all .3s;
+    }
+    .button_01 > div:nth-of-type(1) {
+        margin-left: 0vw;
+    }
+    .polzunok_1 {
+        display: flex;
+        width: 39.96vw;
+        height: 0.87vw;
+        margin-top: 1.2vw;
+    } 
+    .polzunok_1 > div {
+        width: 19.23vw;
+        border: 0.13vw solid #0076BE;
+        padding: 0.24vw 0;
+    }
+    .p1 {
+        width: 18.5vw;
+        height: 0.23vw;
+    }
+    .polzunok_1 > div:nth-of-type(2) {
+        margin-left: 1.1vw;
+    }
+    .c1 {
+        width: 1.4vw;
+        height: 1.4vw;
+        margin-top: -1.1vw;
+    }
+    .p_01 {
+        animation: polzunok2 2s alternate linear infinite;
+    }
+    .c_01 {
+        animation: polzunok3 2s alternate linear infinite;
+    }
+    .p_2 {
+        animation: polzunok2 .8s alternate linear infinite;
+    }
+    .c_02 {
+        animation: polzunok3 .8s alternate linear infinite;
+    }
+    @keyframes polzunok2 {
+        0% {width:0%;}
+        100% {width: 88%;}
+    }
+    @keyframes polzunok3 {
+        0% {margin-left: 0%;}
+        100% {margin-left: 88%;}
+    }
+    /* воздух */
+    .control {
+        width: 98.7vw;
+        height: 46.2vw;
+        margin-top: 1.6vw;
+        display: flex;
+    }
+    /* левое табло */
+    .left_tablo {
+        width: 23.2vw;
+        height: 67.2%;
+    }
+    .left_tablo > div:nth-of-type(1) > h1, .left_tablo > div:nth-of-type(1) > h2, .right_tablo_1 > div:nth-of-type(1) > h1, .right_tablo_1 > div:nth-of-type(1) > h2, .left_tablo_2 > div:nth-of-type(1) > h1, .left_tablo_2 > div:nth-of-type(1) > h2, .magazine > div:nth-of-type(2) > div:nth-of-type(1) > h1, .magazine > div:nth-of-type(2) > div:nth-of-type(1) > h2 {
+        margin-left: 2.25vw;
+    }
+    .left_tablo > div:nth-of-type(1) > h2, .left_tablo_2 > div:nth-of-type(1) > h2 {
+        margin-top: 1vw;
+    }
+    .left_tablo > div:nth-of-type(1), .right_tablo_1 > div:nth-of-type(1), .left_tablo_2 > div:nth-of-type(1), .magazine > div:nth-of-type(2) > div:nth-of-type(1)  {
+        width: 100%;
+        height: 14.94vw;
+        background: url(../images/about_text3.svg);
+        background-size: cover;
+        padding: 2.55vw 0;
+    }
+    .left_tablo > div:nth-of-type(2) {
+        width: 99.4%;
+        height: 6.05vw;
+        background: url(../images/buttons_3.svg);
+        background-size: cover;
+        margin-top: 1vw;
+        padding: 1.94vw 0;
+    }
+    .button_02, .button_03 {
+        margin-left: 1.87vw;
+    }
+    .button_02, .button_03 {
+        width: 19.4vw;
+        height: 2.04vw;
+        display: flex;
+    }
+    .button_02 > .b0, .button_03 > .b0 {
+        height: 100%;
+        width: 4vw;
+        margin-left: 1vw;
+    }
+    .button_02 > div:nth-of-type(1), .button_03 > div:nth-of-type(1) {
+        margin-left: 0vw;
+    }
+    .button_03 {
+        margin-top: 1.2vw;
+    }
+    .control_room {
+        width: 74.5vw;
+        height: 94.6%;
+        margin-left: 1vw;
+        background: url(../images/control_room1.svg);
+        background-size: cover;
+        padding: 1.2vw 0;
+    }
+    .control_room_photo {
+        width: 71.7vw;
+        height: 99.2%;
+        margin-left: 1.25vw;
+        background: url(../images/control_room_photo.svg);
+        background-size: cover;
+        transition: .5s;
+    }
+    .control_room_photo > div > p {
+        margin-top: 19vw;
+    }
+    .control_room_photo > div > p:nth-of-type(1) {
+        margin-left: 0.6vw;
+    }
+    .control_room_photo > div > p:nth-of-type(2) {
+        margin-left: 64.8vw;
+    }
+    .control_1 {
+        width: 98.7vw;
+        height: 46.7vw;
+        margin-top: 1vw;
+        display: flex;
+    }
+    .control_photo, .magazine > div:nth-of-type(1) {
+        height: 94.4%;
+        width: 74.74vw;
+        background: url(../images/control_photo.svg);
+        background-size: cover;
+        padding: 1.24vw 0;
+    }
+    .control_photo > div {
+        width: 71.7vw;
+        height: 43.9vw;
+        margin-left: 1.2vw;
+        background: url(../images/control_photo1.svg);
+        background-size: cover;
+    }
+    .right_tablo_1 {
+        height: 100%;
+        width: 23.2vw;
+        margin-left: 1.1vw;
+    }
+    .right_tablo_1 > div:nth-of-type(1) > h2, .magazine > div:nth-of-type(2) > div:nth-of-type(1) > h2 {
+        margin-top: 2.79vw;
+    }
+    .right_tablo_1 > div:nth-of-type(2), .button_m {
+        height: 6.4vw;
+        width: 100%;
+        background: url(../images/about_button.svg);
+        background-size: cover;
+        margin-top: 0.9vw;
+        padding: 0.9vw 0;
+    }
+    .right_tablo_1 > div:nth-of-type(2) > div, .button_m > div  {
+        height: 2.8vw;
+        width: 20.8vw;
+        background: #D65B34;
+        margin-left: 1.2vw;
+        padding: 1.7vw 0;
+    }
+    a {
+        width: 18vw;
+        height: 3vw;
+        margin-top: 0vw;
+        margin-left: 1.7vw;
+        font-size: 1.3vw;
+        font-weight: 700;
+        letter-spacing: 0.05vw;
+        line-height: 114%;
+        border-bottom: none;
+    }
+    /* отдел воздуха */
+    .air {
+        width: 98.7vw;
+        height: 48.4vw;
+        margin-top: 1vw;
+        display: flex;
+    }
+    /* левое табло */
+    .left_tablo_2 {
+        width: 60.6vw;
+        height: 100%;
+    }
+    .air > div:nth-of-type(2), .air > div:nth-of-type(3) {
+        margin-left: 0.9vw;
+    }
+    .left_tablo_2 > div:nth-of-type(2), .land > div:nth-of-type(1) {
+        height: 24.9vw;
+        background: url(../images/air.svg);
+        background-size: cover;
+        padding: 1.2vw 0;
+    }
+    .left_tablo_2 > div:nth-of-type(2) {
+        margin-top: 1vw;
+        width: 100%;
+    }
+    .left_tablo_2 > div:nth-of-type(2) > div, .land > div:nth-of-type(1) >div {
+        height: 24.2vw;
+        width: 20.5vw;
+        background: url(../images/air_photo1.svg);
+        background-size: cover;
+        margin-left: 1.1vw;
+    }
+    /* фото справа */
+    .air > div:nth-of-type(2), .air > div:nth-of-type(3)  {
+        width: 96vw;
+        height: 93.5%;
+        background: url(../images/air1.svg);
+        background-size: cover;
+        padding: 1.6vw 0;
+    }
+    .air > div:nth-of-type(2) > div, .air > div:nth-of-type(3) > div {
+        height: 44.9vw;
+        width: 33.5vw;
+        margin-left: 1.5vw;
+    }
+    .air > div:nth-of-type(2) > div {
+        background: url(../images/air_photo2.svg);
+        background-size: cover; 
+    }
+    .air > div:nth-of-type(3) > div {
+        background: url(../images/air_photo3.svg);
+        background-size: cover; 
+    }
+    .air > div:nth-of-type(3) {
+        width: 96.7vw;
+    }
+    /* отдел земля */
+    .land {
+        width: 98.7vw;
+        height: 48.4vw;
+        margin-top: 1.1vw;
+        display: flex;
+    }
+    /* фотографии слева и по центру */
+    .land > div:nth-of-type(1) {
+        width: 23.15vw;
+    }
+    .land > div:nth-of-type(1) > div {
+        background: url(../images/land_photo1.svg);
+        background-size: cover; 
+    }
+    .land > div:nth-of-type(2), .right_tablo_2 {
+        margin-left: 0.9vw;
+    }
+    .land > div:nth-of-type(2) {
+        width: 50.6vw;
+        height: 93.7%;
+        background: url(../images/land1.svg);
+        background-size: cover;
+        padding: 1.45vw 0;
+    }
+    .land > div:nth-of-type(2) > div {
+        width: 47.35vw;
+        height: 45vw;
+        background: url(../images/land_photo2.svg);
+        background-size: cover;
+        margin-left: 1.57vw;
+    }
+    /* табло справа */
+    .right_tablo_2 {
+        width: 23.2vw;
+        height: 100%;
+    }
+    .right_tablo_2 > div:nth-of-type(1) {
+        width: 100%;
+        height: 9.7vw;
+        background: url(../images/land3.svg);
+        background-size: cover;
+        padding: 2.5vw 0;
+    }
+    .right_tablo_2 > div:nth-of-type(1) > h1, .right_tablo_2 > div:nth-of-type(1) > h2, .fire > div:nth-of-type(1) > h1, .fire > div:nth-of-type(1) > h2{
+        margin-left: 2.2vw;
+    }
+    .right_tablo_2 > div:nth-of-type(1) > h2, .fire > div:nth-of-type(1) > h2 {
+        margin-top: 1.1vw;
+    }
+    .right_tablo_2 > div:nth-of-type(2) {
+        width: 100%;
+        height: 30vw;
+        background: url(../images/land2.svg);
+        background-size: cover;
+        margin-top: 1.14vw;
+        padding: 1.1vw 0;
+    }
+    .right_tablo_2 > div:nth-of-type(2) > div {
+        width: 20.56vw;
+        height: 29.5vw;
+        background: url(../images/land_photo3.svg);
+        background-size: cover;
+        margin-left: 1.1vw;
+    }
+    /* отдел воды */
+    .water {
+        width: 98.7vw;
+        height: 37.9vw;
+        margin-top: 0.9vw;
+        display: flex;
+    }
+    /* левое табло */
+    .left_tablo_3 {
+        width: 32.4vw;
+        height: 100%;
+    }
+    .left_tablo_3 > div:nth-of-type(1) {
+        width: 100%;
+        height: 9.8vw;
+        background: url(../images/water1.svg);
+        background-size: cover;
+        padding: 2.56vw 0;
+    }
+    .left_tablo_3 > div:nth-of-type(1) > h1, .left_tablo_3 > div:nth-of-type(1) > h2 {
+        margin-left: 3vw;
+    }
+    .left_tablo_3 > div:nth-of-type(1) > h2 {
+        margin-top: 1.06vw;
+    }
+    .left_tablo_3 > div:nth-of-type(2) {
+        width: 100%;
+        height: 19.7vw;
+        background: url(../images/water2.svg);
+        background-size: cover;
+        margin-top: 1vw;
+        padding: 1.2vw 0;
+    }
+    .left_tablo_3 > div:nth-of-type(2) > div {
+        width: 29.2vw;
+        height: 19.3vw;
+        background: url(../images/water_photo1.svg);
+        background-size: cover;
+        margin-left: 1.3vw;
+    }
+    /* фотографии справа */
+    .water > div:nth-of-type(2), .water > div:nth-of-type(3)  {
+        width: 32.1vw;
+        height: 93.6%;
+        margin-left: 1.2vw;
+        padding: 1.25vw 0;
+    }
+    .water > div:nth-of-type(2) {
+        background: url(../images/water3.svg);
+        background-size: cover;
+    }
+    .water > div:nth-of-type(3) {
+        background: url(../images/water3.svg);
+        background-size: cover;
+    }
+    .water > div:nth-of-type(2) > div, .water > div:nth-of-type(3) > div {
+        width: 28.9vw;
+        height: 35.2vw;
+        margin-left: 1.5vw;
+    }
+    .water > div:nth-of-type(2) > div {
+        background: url(../images/water_photo2.svg);
+        background-size: cover;
+    }
+    .water > div:nth-of-type(3) > div {
+        background: url(../images/water_photo3.svg);
+        background-size: cover;
+    }
+    /* отдел огня */
+    .fire {
+        width: 98.7vw;
+        height: 48.2vw;
+        margin-top: 1.2vw;
+        display: flex;
+    }
+    .fire > div:nth-of-type(1) {
+        width: 30.6vw;
+        height: 11.5vw;
+        background: url(../images/fire.svg);
+        background-size: cover;
+        padding: 2.5vw 0;
+        /* height: 16.6vw;
+        background-color: crimson; */
+    }
+    .fire > div:nth-of-type(2) {
+        width: 98.7vw;
+        height: 94.4%;
+        background: url(../images/fire1.svg);
+        background-size: cover;
+        padding: 1.3vw 0;
+        margin-left: 1vw;
+    }
+    .fire > div:nth-of-type(2) > div {
+        width: 71.7vw;
+        height: 45.2vw;
+        background: url(../images/fire_photo.svg);
+        background-size: cover;
+        margin-left: 1.3vw;
+    }
+    /* журнал */
+    .magazine {
+        width: 98.7vw;
+        height: 46.7vw;
+        margin-top: 1.2vw;
+        display: flex;
+    }
+    .magazine > div:nth-of-type(1) > div {
+        width: 71.7vw;
+        height: 43.9vw;
+        margin-left: 1.2vw;
+    }
+    .magazine > div:nth-of-type(2) > div:nth-of-type(1) {
+        width: 23.2vw;
+    }
+    .magazine > div:nth-of-type(2) > div:nth-of-type(1), .button_m {
+        margin-left: 1.2vw;
+    }
+    .button_m {
+        width: 23.2vw;
+    }
+    .button_m > div > a {
+        margin-left: 3.4vw;
+    }
+    /* конец */
+    .end {
+        height: 1.5vw;
+        width: 100%;
+    }
+}

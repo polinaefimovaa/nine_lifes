@@ -1,0 +1,2604 @@
+/* ГЛАВНЫЙ ЭКРАН */
+@media all and (min-width: 1280px) {
+    body {
+        cursor: url('../images/cursor.png'), auto;
+      }
+    a, .b0 {
+        cursor: url('../images/active_cursor.png'), auto;
+
+    }
+}
+@media all and (min-width: 1441px){
+    h1, p, h2, a {
+        color: white;
+    }
+    h1, a {
+        font-size: 1.4vw;
+        letter-spacing: -0.02vw;
+    }
+    /* первая анимированная линия */
+   .line1 {
+    height: 2vw;
+    margin: 0 auto;
+    display: flex;
+    padding: 0.5vw 0;
+   }
+   .line1 > div {
+    border: 0.34vw solid #0076BE;
+    margin-left: 0.268vw;
+    height: 1.112vw;
+   }
+   .line1 > div:nth-of-type(1) {
+    margin-left: 0.7vw;
+   }
+   .line1 > div:nth-of-type(1), .line1 > div:nth-of-type(3) {
+    width: 3.06vw;
+   }
+   .line1 > div:nth-of-type(2) {
+    width: 89.99vw;
+    overflow: hidden;
+   }
+   .line {
+    width: 91.19vw;
+    height: 1.53vw;
+   }
+   .line0 {
+    width: 181.74vw;
+    height: 100%;
+    background: url(../images/line1.svg); 
+    background-size: cover;
+    animation: line 20s linear infinite;
+    }
+    @keyframes line {
+        0% {transform: translateX(0)}
+        100% {transform: translateX(-50%)}
+    }
+    /* вторая линия с картой */
+    .line2 {
+        height: 42.1vw;
+        display: flex;
+    }
+    .map, .right_tablo {
+        margin-top: 0.14vw;
+        margin-left: 0.74vw;
+    }
+    .map {
+        height: 42vw;
+        width: 73.3vw;
+        background: url(../images/map.svg);
+        background-size: cover;
+    }
+    .map > div {
+        width: 1.2vw;
+        height: 0.75vw;
+        background-color: #D65B34;
+        border-radius: 100%;
+        padding: 0.2vw 0vw;
+        
+    }
+    @keyframes opac {
+        0% {opacity:1;}
+        50% {opacity:0;}
+        100% {opacity:1;}
+    }
+    .map > div:nth-of-type(1) {
+        margin-top: 5.4vw;
+        margin-left: 22.5vw;
+        animation: opac 1s linear infinite;
+    }
+    .map > div:nth-of-type(2) {
+        margin-top: 6.9vw;
+        margin-left: 58.7vw;
+        animation: opac 1s linear infinite;
+    }
+    .map > div:nth-of-type(3) {
+        margin-top: 1vw;
+        margin-left: 10.5vw;
+        animation: opac .9s linear infinite;
+    }
+    .map > div:nth-of-type(4) {
+        margin-top: 0.6vw;
+        margin-left: 38.1vw;
+        animation: opac .9s linear infinite;
+    }
+    .map > div:nth-of-type(5) {
+        margin-top: 5.3vw;
+        margin-left: 30.7vw;
+        animation: opac 1.2s linear infinite;
+    }
+    .map > div:nth-of-type(6) {
+        margin-top: 8vw;
+        margin-left: 20.6vw;
+        animation: opac 1s linear infinite;
+    }
+    .map > div:nth-of-type(7) {
+        margin-top: -1vw;
+        margin-left: 55.5vw;
+        animation: opac 1.2s linear infinite;
+    }
+    .circle {
+        width: 0.6vw;
+        height: 0.56vw;
+        border: 0.1vw solid #2B2A2B;
+        margin: 0 auto;
+        border-radius: 100%;
+    }
+    /* левое табло */
+    .right_tablo {
+        width: 35.2vw;
+    }
+    .right_tablo > div {
+        margin-left: 0.2vw;
+    }
+    .radars, .buttons {
+        margin-top: 0.7vw;
+    }
+    /* меню с ссылками */
+    .menu {
+        height: 13.38vw;
+        width: 30.89vw;
+        background: url(../images/text_1.svg);
+        background-size: cover;
+        padding: 2.35vw 0;
+    }
+    a  {
+        margin-left: 3vw;
+        margin-top: 2.64vw;
+        text-decoration: none;
+        display: block;
+        border-bottom: 0.1vw solid white;
+        width: 8.3vw;
+        height: 1.22vw;
+    }
+    .menu > a:nth-of-type(1) {
+        margin-top: 0vw;
+        width: 6.6vw;
+    }
+    .menu > a:nth-of-type(4) {
+        width: 14.77vw;
+    }
+    /* радары */
+    .radars {
+        height: 9.3vw;
+        width: 30.89vw;
+        background: url(../images/radars_1.svg);
+        background-size: cover;
+        padding: 1.6vw 0;
+        display: flex;
+    }
+    /* первый радар */
+    .thefirst, .thesecond {
+        width: 9.1vw;
+        height: 7.9vw;
+        padding: 0.7vw 0;
+    }
+    .thefirst {
+        margin-left: 4.9vw;
+        background: url(../images/thefirst.svg);
+        background-size: cover;
+    }
+    .thefirst > div, .thesecond > div {
+        width: 7.87vw;
+        height: 7.87vw;
+        margin-left: 0.67vw;
+    }
+    .thefirst > div {
+        background: url(../images/thefirst1.svg);
+        background-size: cover;
+    }
+    .locator0, .locator1, .circle0, .circle1, .locator2, .circle2 {
+        width: 100%;
+        height: 100%;
+    }
+    .circle0, .circle1 {
+        margin-top: -8vw;
+    }
+    .locator0 {
+        background: url(../images/locator0.svg);
+        background-size: cover;
+    }
+    .circle0 {
+        background: url(../images/circle0.svg);
+        background-size: cover;
+    }
+    /* второй радар */
+    .thesecond {
+        margin-left: 3.2vw;
+        background: url(../images/thesecond.svg);
+        background-size: cover;
+    }
+    .thesecond > div {
+        background: url(../images/thesecond1.svg);
+        background-size: cover;
+    }
+    .locator1 {
+        background: url(../images/locator1.svg);
+        background-size: cover;
+    }
+    .circle1 {
+        background: url(../images/circle1.svg);
+        background-size: cover;
+    }
+    /* анимация к радарам */
+    .locator0, .locator1, .circle0, .circle1 {
+        animation: radar0 3s linear infinite;
+    }
+    .circle0, .circle1 {
+        animation: radar1 3s linear infinite;
+    }
+    @keyframes radar0 {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+    }
+    @keyframes radar1 {
+        0% {transform: rotate(0deg); opacity: 1;}
+        25% {opacity: 0;}
+        50% {opacity: 1;}
+        75% {opacity: 0;}
+        100% {transform: rotate(360deg); opacity: 1;}
+    }
+    /* кнопки */
+    .button0, .button1, .polzunok, .polzunok1 {
+        margin-left: 2.4vw;
+    }
+    /* 4 кнопки */
+    .buttons {
+        width: 30.94vw;
+        height: 6.66vw;
+        background: url(../images/buttons_1.svg);
+        background-size: cover;
+        padding: 1.57vw 0;
+    }
+    .button0 {
+        width: 26.7vw;
+        height: 2vw;
+        display: flex;
+    }
+    .button0 > div {
+        width: 4.5vw;
+        margin-left: 1.96vw;
+    }
+    .blue {
+        border: 0.31vw solid #0076BE;
+        background: #2B2A2B;
+    }
+    .orange {
+        background-color: #D65B34;
+        border: 0.31vw solid #D65B34;
+    }
+    .button0 > div:nth-of-type(1) {
+        margin-left: 0;
+    }
+    /* одиночный ползунок */
+    .button1, .polzunok > div, .polzunok1 > div {
+        border: 0.13vw solid #0076BE;
+        padding: 0.2vw 0;
+    }
+    .button1 > div, .p1 {
+        background-color: #0076BE;
+        margin-left: 0.4vw;
+    }
+    .button1,  .p1{
+        height: 0.1vw;    }
+    .button1 {
+        width: 25.9vw;
+        margin-top: 0.7vw;
+    }
+    .button1 > div {
+        width: 12vw;
+        height: 0.1vw;
+        animation: polzunok0 3s alternate linear infinite;
+    }
+    .button_1, .c1 {
+        border-radius: 100%;
+        border: 0.4vw solid #D65B34;
+        background: #2B2A2B;
+    }
+    .button_1 {
+        width: 0.8vw;
+        height: 0.8vw;
+        margin-top: -1.24vw;
+        margin-left: 14.4vw;
+        animation: polzunok1 3s alternate linear infinite;
+    }
+    /* первая линия ползунков */
+    .polzunok, .polzunok1 {
+        width: 26.2vw;
+        height: 1.3vw;
+        margin-top: 0.3vw;
+        display: flex;
+    }
+    .polzunok > div, .polzunok1 > div {
+        margin-top: 0.1vw;
+        width: 5.85vw;
+        height: 0.1vw;
+        margin-left: 0.8vw;
+    }
+    .polzunok > div:nth-of-type(1), .polzunok1 > div:nth-of-type(1) {
+        margin-left: 0;
+    }
+    .p1 {
+        width: 3vw;
+    }
+    .c1 {
+        width: 0.7vw;
+        height: 0.7vw;
+        margin-top: -0.77vw;
+        margin-left: 2.67vw;
+        border: 0.3vw solid #D65B34;
+    }
+    .p_1 {
+        animation: polzunok2 2s alternate linear infinite;
+    }
+    .c_1 {
+        animation: polzunok3 2s alternate linear infinite;
+    }
+    .p_2 {
+        animation: polzunok2 .8s alternate linear infinite;
+    }
+    .c_2 {
+        animation: polzunok3 .8s alternate linear infinite;
+    }
+    .p_3 {
+        animation: polzunok2 3s alternate linear infinite;
+    }
+    .c_3 {
+        animation: polzunok3 3s alternate linear infinite;
+    }
+    /* анимация кнопок */
+    .button0 > div:hover {
+        border: 0.31vw solid #D65B34;
+        transition: all .3s;
+    }
+    @keyframes polzunok0 {
+        0% {width:0vw;}
+        100% {width: 25vw;}
+    }
+    @keyframes polzunok1 {
+        0% {margin-left: 2.4vw;}
+        100% {margin-left: 27vw;}
+    }
+    @keyframes polzunok2 {
+        0% {width:0vw;}
+        100% {width: 5vw;}
+    }
+    @keyframes polzunok3 {
+        0% {margin-left: 0.3vw;}
+        100% {margin-left: 4.3vw;}
+    }
+    /* третья линия с текстом */
+    .line3 {
+        height: 10.8vw;
+        margin-top: 0.9vw;
+        display: flex;
+    }
+    .text {
+        width: 48.18vw;
+        height: 5.7vw;
+        background: url(../images/text0.svg);
+        background-size: cover;
+        margin-left: 1.1vw;
+        padding: 2.1vw 0;
+    }
+    .text > h1 {
+        line-height: 1.73vw;
+        margin-left: 2.7vw;
+        letter-spacing: 0.006vw;
+    }
+    /* радар */
+    .radar, .lifes {
+        margin-left: 3.2vw;
+    }
+    .radar {
+        width: 9.69vw;
+        height: 9.69vw;
+        background: url(../images/thethird.svg);
+        background-size: cover;
+    }
+    .locator2 {
+        background: url(../images/thethird1.svg);
+        background-size: cover;
+        animation: radar0 3s linear infinite;
+    }
+    .circle2 {
+        background: url(../images/thethird2.svg);
+        background-size: cover;
+        margin-top: -9.7vw;
+        animation: radar1 3s linear infinite;
+    }
+    /* количество спасенных жизней */
+    .lifes {
+        width: 33.86vw;
+        height: 5.35vw;
+        background: url(../images/lifes_1.svg);
+        background-size: cover;
+        padding: 2.3vw 0;
+    }
+    .lifes >p, .counter {
+        margin-left: 5.7vw;
+    }
+    .lifes > p:nth-of-type(1) {
+        font-size: 0.9vw;
+        letter-spacing: -0.002vw;
+    }
+    /* счетчик */
+    .counter {
+        width: 22.7vw;
+        height: 2.6vw;
+        margin-top: 1.4vw;
+        display: flex;
+    }
+    .l_1, .l_2, .l_3, .l_4, .l_5, .l_6, .l_7, .l_8, .l_9 {
+        font-size: 3.3vw;
+        font-weight: 500;
+        line-height: 2.6vw;
+    }
+    .l_1 {
+        margin-left: -0.2vw;
+    }
+    .l_4, .l_7 {
+        margin-left: 2.1vw;
+    }
+}
+
+@media all and (min-width: 1281px) and (max-width: 1440px) {
+    h1, p, h2, a {
+        color: white;
+    }
+    h1, a {
+        font-size: 1.55vw;
+        letter-spacing: -0.03vw;
+    }
+    /* первая анимированная линия */
+   .line1 {
+    height: 1.8vw;
+    margin: 0 auto;
+    display: flex;
+    padding: 0.62vw 0;
+   }
+   .line1 > div {
+    border: 0.34vw solid #0076BE;
+    margin-left: 0.268vw;
+    height: 1.112vw;
+   }
+   .line1 > div:nth-of-type(1) {
+    margin-left: 0.33vw;
+   }
+   .line1 > div:nth-of-type(1), .line1 > div:nth-of-type(3) {
+    width: 3.06vw;
+   }
+   .line1 > div:nth-of-type(2) {
+    width: 90.84vw;
+    overflow: hidden;
+   }
+   .line {
+    width: 91.19vw;
+    height: 1.53vw;
+   }
+   .line0 {
+    width: 181.74vw;
+    height: 100%;
+    background: url(../images/line1.svg); 
+    background-size: cover;
+    animation: line 20s linear infinite;
+    }
+    @keyframes line {
+        0% {transform: translateX(0)}
+        100% {transform: translateX(-50%)}
+    }
+    /* вторая линия с картой */
+    .line2 {
+        height: 47.2vw;
+        display: flex;
+    }
+    .map, .right_tablo {
+        margin-top: 0.14vw;
+        margin-left: 0.4vw;
+    }
+    .map {
+        height: 46.88vw;
+        width: 105.2vw;    
+        background: url(../images/map.svg); 
+        background-size: cover;
+    }
+    .map > div {
+        width: 1.2vw;
+        height: 0.75vw;
+        background-color: #D65B34;
+        border-radius: 100%;
+        padding: 0.2vw 0vw;
+    }
+    .map > div:nth-of-type(1) {
+        margin-top: 6.1vw;
+        margin-left: 25.4vw;
+        animation: opac 1s linear infinite;
+    }
+    .map > div:nth-of-type(2) {
+        margin-top: 7.8vw;
+        margin-left: 65.9vw;
+        animation: opac 1s linear infinite;
+    }
+    .map > div:nth-of-type(3) {
+        margin-top: 1.3vw;
+        margin-left: 12vw;
+        animation: opac .9s linear infinite;
+    }
+    .map > div:nth-of-type(4) {
+        margin-top: 0.7vw;
+        margin-left: 42.8vw;
+        animation: opac .9s linear infinite;
+    }
+    .map > div:nth-of-type(5) {
+        margin-top: 6.1vw;
+        margin-left: 34.4vw;
+        animation: opac 1.2s linear infinite;
+    }
+    .map > div:nth-of-type(6) {
+        margin-top: 9.3vw;
+        margin-left: 23.1vw;
+        animation: opac 1s linear infinite;
+    }
+    .map > div:nth-of-type(7) {
+        margin-top: 0.1vw;
+        margin-left: 62.8vw;
+        animation: opac 1.2s linear infinite;
+    }
+    @keyframes opac {
+        0% {opacity:1;}
+        50% {opacity:0;}
+        100% {opacity:1;}
+    }
+    .circle {
+        width: 0.6vw;
+        height: 0.56vw;
+        border: 0.1vw solid #2B2A2B;
+        margin: 0 auto;
+        border-radius: 100%;
+    }
+    .exist {
+        opacity: 1;
+    }
+    .none {
+        opacity: 0;
+    }
+    /* левое табло */
+    .right_tablo {
+        width: 35.2vw;
+    }
+    .right_tablo > div {
+        margin-left: 0.2vw;
+    }
+    .radars, .buttons {
+        margin-top: 1.1vw;
+    }
+    /* меню с ссылками */
+    .menu {
+        height: 14.87vw;
+        width: 24.03vw;
+        background: url(../images/text.svg);
+        background-size: cover;
+        padding: 2.6vw 0;
+    }
+    a {
+        text-decoration: none;
+        display: block;
+        margin-left: 3.2vw;
+        margin-top: 2.89vw;
+        border-bottom: 0.12vw solid white;
+        width: 9.3vw;
+        height: 1.4vw;
+    }
+    .menu > a:nth-of-type(1) {
+        margin-top: 0vw;
+        width: 7.44vw;
+    }
+    .menu > a:nth-of-type(4) {
+        width: 16.77vw;
+    }
+    /* радары */
+    .radars {
+        height: 10.16vw;
+        width: 23.959vw;
+        background: url(../images/radars.svg);
+        background-size: cover;
+        padding: 1.9vw 0;
+        display: flex;
+    }
+    /* первый радар */
+    .thefirst, .thesecond {
+        width: 10.21vw;
+        height: 8.61vw;
+        padding: 0.8vw 0;
+    }
+    .thefirst {
+        margin-left: 1.6vw;
+        background: url(../images/thefirst.svg);
+        background-size: cover;
+    }
+    .thefirst > div, .thesecond > div {
+        width: 8.75vw;
+        height: 8.75vw;
+        margin-left: 0.75vw;
+    }
+    .thefirst > div {
+        background: url(../images/thefirst1.svg);
+        background-size: cover;
+    }
+    .locator0, .locator1, .circle0, .circle1, .locator2, .circle2 {
+        width: 100%;
+        height: 100%;
+    }
+    .circle0, .circle1 {
+        margin-top: -8.75vw;
+    }
+    .locator0 {
+        background: url(../images/locator0.svg);
+        background-size: cover;
+    }
+    .circle0 {
+        background: url(../images/circle0.svg);
+        background-size: cover;
+    }
+    /* второй радар */
+    .thesecond {
+        margin-left: 0.37vw;
+        background: url(../images/thesecond.svg);
+        background-size: cover;
+    }
+    .thesecond > div {
+        background: url(../images/thesecond1.svg);
+        background-size: cover;
+    }
+    .locator1 {
+        background: url(../images/locator1.svg);
+        background-size: cover;
+    }
+    .circle1 {
+        background: url(../images/circle1.svg);
+        background-size: cover;
+    }
+    /* анимация к радарам */
+    .locator0, .locator1, .circle0, .circle1 {
+        animation: radar0 3s linear infinite;
+    }
+    .circle0, .circle1 {
+        animation: radar1 3s linear infinite;
+    }
+    @keyframes radar0 {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+    }
+    @keyframes radar1 {
+        0% {transform: rotate(0deg); opacity: 1;}
+        25% {opacity: 0;}
+        50% {opacity: 1;}
+        75% {opacity: 0;}
+        100% {transform: rotate(360deg); opacity: 1;}
+    }
+    /* кнопки */
+    .button0, .button1, .polzunok, .polzunok1 {
+        margin-left: 1.98vw;
+    }
+    /* 4 кнопки */
+    .buttons {
+        width: 23.88vw;
+        height: 7.695vw;
+        background: url(../images/buttons.svg);
+        background-size: cover;
+        padding: 1.57vw 0;
+    }
+    .button0 {
+        width: 20vw;
+        height: 2vw;
+        display: flex;
+    }
+    .button0 > div {
+        width: 3.56vw;
+        margin-left: 1.16vw;
+    }
+    .blue {
+        border: 0.31vw solid #0076BE;
+        background: #2B2A2B;
+    }
+    .orange {
+        background-color: #D65B34;
+        border: 0.31vw solid #D65B34;
+    }
+    .button0 > div:nth-of-type(1) {
+        margin-left: 0;
+    }
+    /* одиночный ползунок */
+    .button1, .polzunok > div, .polzunok1 > div {
+        border: 0.13vw solid #0076BE;
+        padding: 0.24vw 0;
+    }
+    .button1 > div, .p1 {
+        background-color: #0076BE;
+        margin-left: 0.4vw;
+    }
+    .button1,  .p1{
+        height: 0.2vw;
+    }
+    .button1 {
+        width: 19.78vw;
+        margin-top: 0.8vw;
+    }
+    .button1 > div {
+        width: 12vw;
+        height: 0.2vw;
+        animation: polzunok0 3s alternate linear infinite;
+    }
+    .button_1, .c1 {
+        border-radius: 100%;
+        border: 0.4vw solid #D65B34;
+        background: #2B2A2B;
+    }
+    .button_1 {
+        width: 0.8vw;
+        height: 0.8vw;
+        margin-top: -1.24vw;
+        margin-left: 14.4vw;
+        animation: polzunok1 3s alternate linear infinite;
+    }
+    /* первая линия ползунков */
+    .polzunok, .polzunok1 {
+        width: 20vw;
+        height: 1.3vw;
+        margin-top: 0.3vw;
+        display: flex;
+    }
+    .polzunok > div, .polzunok1 > div {
+        margin-top: 0.3vw;
+        width: 4.6vw;
+        height: 0.2vw;
+        margin-left: 0.3vw;
+    }
+    .polzunok > div:nth-of-type(1), .polzunok1 > div:nth-of-type(1) {
+        margin-left: 0;
+    }
+    .p1 {
+        width: 3vw;
+    }
+    .c1 {
+        width: 0.7vw;
+        height: 0.7vw;
+        margin-top: -0.77vw;
+        margin-left: 2.67vw;
+        border: 0.3vw solid #D65B34;
+    }
+    .p_1 {
+        animation: polzunok2 2s alternate linear infinite;
+    }
+    .c_1 {
+        animation: polzunok3 2s alternate linear infinite;
+    }
+    .p_2 {
+        animation: polzunok2 .8s alternate linear infinite;
+    }
+    .c_2 {
+        animation: polzunok3 .8s alternate linear infinite;
+    }
+    .p_3 {
+        animation: polzunok2 3s alternate linear infinite;
+    }
+    .c_3 {
+        animation: polzunok3 3s alternate linear infinite;
+    }
+    /* анимация кнопок */
+    .button0 > div:hover {
+        border: 0.31vw solid #D65B34;
+        transition: all .3s;
+    }
+    @keyframes polzunok0 {
+        0% {width:0vw;}
+        100% {width: 19vw;}
+    }
+    @keyframes polzunok1 {
+        0% {margin-left: 2.4vw;}
+        100% {margin-left: 20vw;}
+    }
+    @keyframes polzunok2 {
+        0% {width:0vw;}
+        100% {width: 3.7vw;}
+    }
+    @keyframes polzunok3 {
+        0% {margin-left: 0.3vw;}
+        100% {margin-left: 3vw;}
+    }
+    /* третья линия с текстом */
+    .line3 {
+        height: 10.8vw;
+        margin-top: 0.87vw;
+        display: flex;
+    }
+    .text {
+        width: 52.223vw;
+        height: 5.97vw;
+        background: url(../images/text0.svg);
+        background-size: cover;
+        margin-left: 0.4vw;
+        padding: 2.4vw 0;
+    }
+    .text > h1 {
+        line-height: 1.84vw;
+        margin-left: 2.9vw;
+    }
+    /* радар */
+    .radar, .lifes {
+        margin-left: 1.7vw;
+    }
+    .radar {
+        width: 10.63vw;
+        height: 10.63vw;
+        background: url(../images/thethird.svg);
+        background-size: cover;
+    }
+    .locator2 {
+        background: url(../images/thethird1.svg);
+        background-size: cover;
+        animation: radar0 3s linear infinite;
+    }
+    .circle2 {
+        background: url(../images/thethird2.svg);
+        background-size: cover;
+        margin-top: -10.6vw;
+        animation: radar1 3s linear infinite;
+    }
+    /* количество спасенных жизней */
+    .lifes {
+        width: 32.57vw;
+        height: 5.6vw;
+        background: url(../images/lifes.svg);
+        background-size: cover;
+        padding: 2.55vw 0;
+    }
+    .lifes >p, .counter {
+        margin-left: 4.9vw;
+    }
+    .lifes > p:nth-of-type(1) {
+        font-size: 1vw;
+        letter-spacing: -0.015vw;
+    }
+    /* счетчик */
+    .counter {
+        width: 22.7vw;
+        height: 2.6vw;
+        margin-top: 1.5vw;
+        display: flex;
+    }
+    .l_1, .l_2, .l_3, .l_4, .l_5, .l_6, .l_7, .l_8, .l_9 {
+        font-size: 3.5vw;
+        font-weight: 500;
+
+        line-height: 2.6vw;
+    }
+    .l_1 {
+        margin-left: -0.2vw;
+    }
+    .l_4, .l_7 {
+        margin-left: 2.1vw;
+    }
+}
+
+@media all and (min-width: 835px) and (max-width: 1280px){
+    h1, p, h2, a {
+        color: white;
+    }
+    h1, a {
+        font-size: 1.4vw;
+        letter-spacing: -0.02vw;
+    }
+    /* первая анимированная линия */
+   .line1 {
+    height: 2vw;
+    margin: 0 auto;
+    display: flex;
+    padding: 0.5vw 0;
+   }
+   .line1 > div {
+    border: 0.34vw solid #0076BE;
+    margin-left: 0.268vw;
+    height: 1.112vw;
+   }
+   .line1 > div:nth-of-type(1) {
+    margin-left: 0.7vw;
+   }
+   .line1 > div:nth-of-type(1), .line1 > div:nth-of-type(3) {
+    width: 3.06vw;
+   }
+   .line1 > div:nth-of-type(2) {
+    width: 89.99vw;
+    overflow: hidden;
+   }
+   .line {
+    width: 91.19vw;
+    height: 1.53vw;
+   }
+   .line0 {
+    width: 181.74vw;
+    height: 100%;
+    background: url(../images/line1.svg); 
+    background-size: cover;
+    animation: line 20s linear infinite;
+    }
+    @keyframes line {
+        0% {transform: translateX(0)}
+        100% {transform: translateX(-50%)}
+    }
+    /* вторая линия с картой */
+    .line2 {
+        height: 42.1vw;
+        display: flex;
+    }
+    .map, .right_tablo {
+        margin-top: 0.14vw;
+        margin-left: 0.74vw;
+    }
+    .map {
+        height: 42vw;
+        width: 73.3vw;
+        background: url(../images/map.svg);
+        background-size: cover;
+    }
+    .map > div {
+        width: 1.2vw;
+        height: 0.75vw;
+        background-color: #D65B34;
+        border-radius: 100%;
+        padding: 0.2vw 0vw;
+        
+    }
+    @keyframes opac {
+        0% {opacity:1;}
+        50% {opacity:0;}
+        100% {opacity:1;}
+    }
+    .map > div:nth-of-type(1) {
+        margin-top: 5.4vw;
+        margin-left: 22.5vw;
+        animation: opac 1s linear infinite;
+    }
+    .map > div:nth-of-type(2) {
+        margin-top: 6.9vw;
+        margin-left: 58.7vw;
+        animation: opac 1s linear infinite;
+    }
+    .map > div:nth-of-type(3) {
+        margin-top: 1vw;
+        margin-left: 10.5vw;
+        animation: opac .9s linear infinite;
+    }
+    .map > div:nth-of-type(4) {
+        margin-top: 0.6vw;
+        margin-left: 38.1vw;
+        animation: opac .9s linear infinite;
+    }
+    .map > div:nth-of-type(5) {
+        margin-top: 5.3vw;
+        margin-left: 30.7vw;
+        animation: opac 1.2s linear infinite;
+    }
+    .map > div:nth-of-type(6) {
+        margin-top: 8vw;
+        margin-left: 20.6vw;
+        animation: opac 1s linear infinite;
+    }
+    .map > div:nth-of-type(7) {
+        margin-top: -1vw;
+        margin-left: 55.5vw;
+        animation: opac 1.2s linear infinite;
+    }
+    .circle {
+        width: 0.6vw;
+        height: 0.56vw;
+        border: 0.1vw solid #2B2A2B;
+        margin: 0 auto;
+        border-radius: 100%;
+    }
+    /* левое табло */
+    .right_tablo {
+        width: 35.2vw;
+    }
+    .right_tablo > div {
+        margin-left: 0.2vw;
+    }
+    .radars, .buttons {
+        margin-top: 0.7vw;
+    }
+    /* меню с ссылками */
+    .menu {
+        height: 13.38vw;
+        width: 30.89vw;
+        background: url(../images/text_1.svg);
+        background-size: cover;
+        padding: 2.35vw 0;
+    }
+    a  {
+        text-decoration: none;
+        display: block;
+        margin-left: 3vw;
+        margin-top: 2.64vw;
+        border-bottom: 0.1vw solid white;
+        width: 8.3vw;
+        height: 1.22vw;
+    }
+    .menu > a:nth-of-type(1) {
+        margin-top: 0vw;
+        width: 6.6vw;
+    }
+    .menu >  a:nth-of-type(4) {
+        width: 14.77vw;
+    }
+    /* радары */
+    .radars {
+        height: 9.3vw;
+        width: 30.89vw;
+        background: url(../images/radars_1.svg);
+        background-size: cover;
+        padding: 1.6vw 0;
+        display: flex;
+    }
+    /* первый радар */
+    .thefirst, .thesecond {
+        width: 9.1vw;
+        height: 7.9vw;
+        padding: 0.7vw 0;
+    }
+    .thefirst {
+        margin-left: 4.9vw;
+        background: url(../images/thefirst.svg);
+        background-size: cover;
+    }
+    .thefirst > div, .thesecond > div {
+        width: 7.87vw;
+        height: 7.87vw;
+        margin-left: 0.67vw;
+    }
+    .thefirst > div {
+        background: url(../images/thefirst1.svg);
+        background-size: cover;
+    }
+    .locator0, .locator1, .circle0, .circle1, .locator2, .circle2 {
+        width: 100%;
+        height: 100%;
+    }
+    .circle0, .circle1 {
+        margin-top: -8vw;
+    }
+    .locator0 {
+        background: url(../images/locator0.svg);
+        background-size: cover;
+    }
+    .circle0 {
+        background: url(../images/circle0.svg);
+        background-size: cover;
+    }
+    /* второй радар */
+    .thesecond {
+        margin-left: 3.2vw;
+        background: url(../images/thesecond.svg);
+        background-size: cover;
+    }
+    .thesecond > div {
+        background: url(../images/thesecond1.svg);
+        background-size: cover;
+    }
+    .locator1 {
+        background: url(../images/locator1.svg);
+        background-size: cover;
+    }
+    .circle1 {
+        background: url(../images/circle1.svg);
+        background-size: cover;
+    }
+    /* анимация к радарам */
+    .locator0, .locator1, .circle0, .circle1 {
+        animation: radar0 3s linear infinite;
+    }
+    .circle0, .circle1 {
+        animation: radar1 3s linear infinite;
+    }
+    @keyframes radar0 {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+    }
+    @keyframes radar1 {
+        0% {transform: rotate(0deg); opacity: 1;}
+        25% {opacity: 0;}
+        50% {opacity: 1;}
+        75% {opacity: 0;}
+        100% {transform: rotate(360deg); opacity: 1;}
+    }
+    /* кнопки */
+    .button0, .button1, .polzunok, .polzunok1 {
+        margin-left: 2.4vw;
+    }
+    /* 4 кнопки */
+    .buttons {
+        width: 30.94vw;
+        height: 6.66vw;
+        background: url(../images/buttons_1.svg);
+        background-size: cover;
+        padding: 1.57vw 0;
+    }
+    .button0 {
+        width: 26.7vw;
+        height: 2vw;
+        display: flex;
+    }
+    .button0 > div {
+        width: 4.5vw;
+        margin-left: 1.96vw;
+    }
+    .blue {
+        border: 0.31vw solid #0076BE;
+        background: #2B2A2B;
+    }
+    .orange {
+        background-color: #D65B34;
+        border: 0.31vw solid #D65B34;
+    }
+    .button0 > div:nth-of-type(1) {
+        margin-left: 0;
+    }
+    /* одиночный ползунок */
+    .button1, .polzunok > div, .polzunok1 > div {
+        border: 0.13vw solid #0076BE;
+        padding: 0.2vw 0;
+    }
+    .button1 > div, .p1 {
+        background-color: #0076BE;
+        margin-left: 0.4vw;
+    }
+    .button1,  .p1{
+        height: 0.1vw;    }
+    .button1 {
+        width: 25.9vw;
+        margin-top: 0.7vw;
+    }
+    .button1 > div {
+        width: 12vw;
+        height: 0.1vw;
+        animation: polzunok0 3s alternate linear infinite;
+    }
+    .button_1, .c1 {
+        border-radius: 100%;
+        border: 0.4vw solid #D65B34;
+        background: #2B2A2B;
+    }
+    .button_1 {
+        width: 0.8vw;
+        height: 0.8vw;
+        margin-top: -1.24vw;
+        margin-left: 14.4vw;
+        animation: polzunok1 3s alternate linear infinite;
+    }
+    /* первая линия ползунков */
+    .polzunok, .polzunok1 {
+        width: 26.2vw;
+        height: 1.3vw;
+        margin-top: 0.3vw;
+        display: flex;
+    }
+    .polzunok > div, .polzunok1 > div {
+        margin-top: 0.1vw;
+        width: 5.85vw;
+        height: 0.1vw;
+        margin-left: 0.8vw;
+    }
+    .polzunok > div:nth-of-type(1), .polzunok1 > div:nth-of-type(1) {
+        margin-left: 0;
+    }
+    .p1 {
+        width: 3vw;
+    }
+    .c1 {
+        width: 0.7vw;
+        height: 0.7vw;
+        margin-top: -0.77vw;
+        margin-left: 2.67vw;
+        border: 0.3vw solid #D65B34;
+    }
+    .p_1 {
+        animation: polzunok2 2s alternate linear infinite;
+    }
+    .c_1 {
+        animation: polzunok3 2s alternate linear infinite;
+    }
+    .p_2 {
+        animation: polzunok2 .8s alternate linear infinite;
+    }
+    .c_2 {
+        animation: polzunok3 .8s alternate linear infinite;
+    }
+    .p_3 {
+        animation: polzunok2 3s alternate linear infinite;
+    }
+    .c_3 {
+        animation: polzunok3 3s alternate linear infinite;
+    }
+    /* анимация кнопок */
+    .button0 > div:hover {
+        border: 0.31vw solid #D65B34;
+        transition: all .3s;
+    }
+    @keyframes polzunok0 {
+        0% {width:0vw;}
+        100% {width: 25vw;}
+    }
+    @keyframes polzunok1 {
+        0% {margin-left: 2.4vw;}
+        100% {margin-left: 27vw;}
+    }
+    @keyframes polzunok2 {
+        0% {width:0vw;}
+        100% {width: 5vw;}
+    }
+    @keyframes polzunok3 {
+        0% {margin-left: 0.3vw;}
+        100% {margin-left: 4.3vw;}
+    }
+    /* третья линия с текстом */
+    .line3 {
+        height: 10.8vw;
+        margin-top: 0.9vw;
+        display: flex;
+    }
+    .text {
+        width: 48.18vw;
+        height: 5.7vw;
+        background: url(../images/text0.svg);
+        background-size: cover;
+        margin-left: 1.1vw;
+        padding: 2.1vw 0;
+    }
+    .text > h1 {
+        line-height: 1.73vw;
+        margin-left: 2.7vw;
+        letter-spacing: 0.006vw;
+    }
+    /* радар */
+    .radar, .lifes {
+        margin-left: 3.2vw;
+    }
+    .radar {
+        width: 9.69vw;
+        height: 9.69vw;
+        background: url(../images/thethird.svg);
+        background-size: cover;
+    }
+    .locator2 {
+        background: url(../images/thethird1.svg);
+        background-size: cover;
+        animation: radar0 3s linear infinite;
+    }
+    .circle2 {
+        background: url(../images/thethird2.svg);
+        background-size: cover;
+        margin-top: -9.7vw;
+        animation: radar1 3s linear infinite;
+    }
+    /* количество спасенных жизней */
+    .lifes {
+        width: 33.86vw;
+        height: 5.35vw;
+        background: url(../images/lifes_1.svg);
+        background-size: cover;
+        padding: 2.3vw 0;
+    }
+    .lifes >p, .counter {
+        margin-left: 5.7vw;
+    }
+    .lifes > p:nth-of-type(1) {
+        font-size: 0.9vw;
+        letter-spacing: -0.002vw;
+    }
+    /* счетчик */
+    .counter {
+        width: 22.7vw;
+        height: 2.6vw;
+        margin-top: 1.4vw;
+        display: flex;
+    }
+    .l_1, .l_2, .l_3, .l_4, .l_5, .l_6, .l_7, .l_8, .l_9 {
+        font-size: 3.3vw;
+        font-weight: 500;
+        line-height: 2.6vw;
+    }
+    .l_1 {
+        margin-left: -0.2vw;
+    }
+    .l_4, .l_7 {
+        margin-left: 2.1vw;
+    }
+}
+
+@media all and (min-width: 376px) and (max-width: 834px){
+    h1, p, h2, a {
+        color: white;
+    }
+    h1, a {
+        font-size: 2.56vw;
+        letter-spacing: -0.045vw;
+    }
+    /* первая анимированная линия */
+   .line1 {
+    height: 1.8vw;
+    margin: 0 auto;
+    display: flex;
+    padding: 0.7vw 0;
+   }
+   .line1 > div {
+    border: 0.34vw solid #0076BE;
+    margin-left: 0.6vw;
+    height: 1.7vw;
+   }
+   .line1 > div:nth-of-type(1) {
+    margin-left: 0.5vw;
+   }
+   .line1 > div:nth-of-type(1), .line1 > div:nth-of-type(3) {
+    width: 3.06vw;
+   }
+   .line1 > div:nth-of-type(2) {
+    width: 89.8vw;
+    overflow: hidden;  
+   }
+   .line {
+    width: 91.19vw;
+    height: 1.53vw;
+   }
+   .line0 {
+    width: 181.74vw;
+    height: 100%;
+    background: url(../images/line1.svg); 
+    background-size: cover;
+    animation: line 20s linear infinite;
+    }
+    @keyframes line {
+        0% {transform: translateX(0)}
+        100% {transform: translateX(-50%)}
+    }
+    /* вторая линия с картой */
+    .map, .right_tablo {
+        margin-top: 0.14vw;
+        margin-left: 0.6vw;
+    }
+    .map {
+        height: 44.68vw;
+        width: 98.84vw;
+        background: url(../images/map_1.svg);
+        background-size: cover;
+        margin-top: 51.5vw;
+        padding: 8vw 0;
+    }
+    .map > div {
+        width: 1.6vw;
+        height: 1vw;
+        background-color: #D65B34;
+        border-radius: 100%;
+        padding: 0.27vw 0vw;
+    }
+    .map > div:nth-of-type(1) {
+        margin-left: 33.4vw;
+        animation: opac 1s linear infinite;
+    }
+    .map > div:nth-of-type(2) {
+        margin-top: 10.4vw;
+        margin-left: 87.5vw;
+        animation: opac 1s linear infinite;
+    }
+    .map > div:nth-of-type(3) {
+        margin-top: 1.6vw;
+        margin-left: 15.5vw;
+        animation: opac .9s linear infinite;
+    }
+    .map > div:nth-of-type(4) {
+        margin-top: 1vw;
+        margin-left: 56.8vw;
+        animation: opac .9s linear infinite;
+    }
+    .map > div:nth-of-type(5) {
+        margin-top: 8.1vw;
+        margin-left: 45.8vw;
+        animation: opac 1.2s linear infinite;
+    }
+    .map > div:nth-of-type(6) {
+        margin-top: 12.3vw;
+        margin-left: 30.5vw;
+        animation: opac 1s linear infinite;
+    }
+    .map > div:nth-of-type(7) {
+        margin-top: -1.4vw;
+        margin-left: 82.8vw;
+        animation: opac 1.2s linear infinite;
+    }
+    @keyframes opac {
+        0% {opacity:1;}
+        50% {opacity:0;}
+        100% {opacity:1;}
+    }
+    .circle {
+        width: 0.8vw;
+        height: 0.8vw;
+        border: 0.1vw solid #2B2A2B;
+        margin: 0 auto;
+        border-radius: 100%;
+    }
+    .exist {
+        opacity: 1;
+    }
+    .none {
+        opacity: 0;
+    }
+    /* левое табло */
+    /* меню с ссылками */
+    .menu {
+        height: 22.73vw;
+        width: 33.73vw;
+        background: url(../images/text_2.svg);
+        background-size: cover;
+        padding: 2.7vw 0;
+        margin-top: -111.78vw;
+        margin-left: 65.3vw;
+    }
+    a  {
+        text-decoration: none;
+        display: block;
+        margin-left: 2.76vw;
+        margin-top: 3.82vw;
+        border-bottom: 0.199vw solid white;
+        width: 15.06vw;
+        height: 2.4vw;
+    }
+    .menu > a:nth-of-type(1) {
+        margin-top: 0vw;
+        width: 12.24vw;
+    }
+    .menu > a:nth-of-type(4) {
+        width: 27.2vw;
+    }
+    /* радары */
+    .radars {
+        height: 11.7vw;
+        width: 27.48vw;
+        background: url(../images/radars.svg);
+        background-size: cover;
+        padding: 2.1vw 0;
+        display: flex;
+        margin-top: 84.58vw;
+        margin-left: 19.8vw;
+    }
+    /* первый радар */
+    .thefirst, .thesecond {
+        width: 11.66vw;
+        height: 9.73vw;
+        padding: 1vw 0;
+    }
+    .thefirst {
+        margin-left: 2vw;
+        background: url(../images/thefirst.svg);
+        background-size: cover;
+    }
+    .thefirst > div, .thesecond > div {
+        width: 9.9vw;
+        height: 9.9vw;
+        margin-left: 0.75vw;
+    }
+    .thefirst > div {
+        background: url(../images/thefirst1.svg);
+        background-size: cover;
+    }
+    .locator0, .locator1, .circle0, .circle1, .locator2, .circle2 {
+        width: 100%;
+        height: 100%;
+    }
+    .circle0, .circle1 {
+        margin-top: -9.8vw;    
+    }
+    .locator0 {
+        background: url(../images/locator0.svg);
+        background-size: cover;
+    }
+    .circle0 {
+        background: url(../images/circle0.svg);
+        background-size: cover;
+    }
+    /* второй радар */
+    .thesecond {
+        margin-left: 0.37vw;
+        background: url(../images/thesecond.svg);
+        background-size: cover;
+    }
+    .thesecond > div {
+        background: url(../images/thesecond1.svg);
+        background-size: cover;
+    }
+    .locator1 {
+        background: url(../images/locator1.svg);
+        background-size: cover;
+    }
+    .circle1 {
+        background: url(../images/circle1.svg);
+        background-size: cover;
+    }
+    /* анимация к радарам */
+    .locator0, .locator1, .circle0, .circle1 {
+        animation: radar0 3s linear infinite;
+    }
+    .circle0, .circle1 {
+        animation: radar1 3s linear infinite;
+    }
+    @keyframes radar0 {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+    }
+    @keyframes radar1 {
+        0% {transform: rotate(0deg); opacity: 1;}
+        25% {opacity: 0;}
+        50% {opacity: 1;}
+        75% {opacity: 0;}
+        100% {transform: rotate(360deg); opacity: 1;}
+    }
+    /* кнопки */
+    .button0, .button1, .polzunok, .polzunok1 {
+        margin-left: 5.6vw;
+    }
+    /* 4 кнопки */
+    .buttons {
+        margin-top: -128.3vw;        
+        width: 63.94vw;
+        height: 19.34vw;
+        background: url(../images/buttons_2.svg);
+        background-size: cover;
+        padding: 4.2vw 0;
+    }
+    .button0 {
+        width: 52.4vw;
+        height: 5vw;
+        display: flex;
+    }
+    .button0 > div {
+        width: 9.3vw;
+        margin-left: 3vw;
+    }
+    .blue {
+        border: 0.8vw solid #0076BE;
+        background: #2B2A2B;
+    }
+    .orange {
+        background-color: #D65B34;
+        border: 0.31vw solid #D65B34;
+    }
+    .button0 > div:nth-of-type(1) {
+        margin-left: 0;
+    }
+    /* одиночный ползунок */
+    .button1, .polzunok > div, .polzunok1 > div {
+        border: 0.3vw solid #0076BE;
+        padding: 0.5vw 0;
+    }
+    .button1 > div, .p1 {
+        background-color: #0076BE;
+        margin-left: 0.7vw;
+    }
+    .button1,  .p1{
+        height: 0.5vw;
+    }
+    .button1 {
+        width: 51.9vw;
+        margin-top: 2.5vw;
+    }
+    .button1 > div {
+        width: 12vw;
+        height: 0.5vw;
+        animation: polzunok0 3s alternate linear infinite;
+    }
+    .button_1, .c1 {
+        border-radius: 100%;
+        border: 0.6vw solid #D65B34;
+        background: #2B2A2B;
+    }
+    .button_1 {
+        width: 3vw;
+        height: 3vw;
+        margin-top: -3.3vw;
+        margin-left: 38vw;
+        animation: polzunok1 3s alternate linear infinite;
+    }
+    /* первая линия ползунков */
+    .polzunok, .polzunok1 {
+        width: 52.3vw;
+        height: 1.3vw;
+        margin-top: 1.3vw;
+        display: flex;
+    }
+    .polzunok1 {
+        margin-top: 3.3vw;
+    }
+    .polzunok > div, .polzunok1 > div {
+        margin-top: 0.3vw;
+        width: 11.8vw;
+        height: 0.6vw;
+        margin-left: 1.1vw;
+    }
+    .polzunok > div:nth-of-type(1), .polzunok1 > div:nth-of-type(1) {
+        margin-left: 0;
+    }
+    .p1 {
+        width: 3vw;
+    }
+    .c1 {
+        width: 2.3vw;
+        height: 2.3vw;
+        margin-top: -1.8vw;
+        margin-left: 6.9vw;
+        border: 0.4vw solid #D65B34;
+    }
+    .p_1 {
+        animation: polzunok2 2s alternate linear infinite;
+    }
+    .c_1 {
+        animation: polzunok3 2s alternate linear infinite;
+    }
+    .p_2 {
+        animation: polzunok2 .8s alternate linear infinite;
+    }
+    .c_2 {
+        animation: polzunok3 .8s alternate linear infinite;
+    }
+    .p_3 {
+        animation: polzunok2 3s alternate linear infinite;
+    }
+    .c_3 {
+        animation: polzunok3 3s alternate linear infinite;
+    }
+    /* анимация кнопок */
+    .button0 > div:hover {
+        border: 0.31vw solid #D65B34;
+        transition: all .3s;
+    }
+    @keyframes polzunok0 {
+        0% {width:0vw;}
+        100% {width: 50vw;}
+    }
+    @keyframes polzunok1 {
+        0% {margin-left: 6.4vw;}
+        100% {margin-left: 53vw;}
+    }
+    @keyframes polzunok2 {
+        0% {width:0vw;}
+        100% {width: 10vw;}
+    }
+    @keyframes polzunok3 {
+        0% {margin-left: 0.3vw;}
+        100% {margin-left: 7.9vw;}
+    }
+    /* третья линия с текстом */
+    .text {
+        width: 98.96vw;
+        height: 10.92vw;
+        background: url(../images/text0.svg);
+        background-size: cover;
+        margin-left: 0.5vw;
+        padding: 4.7vw 0;
+        margin-top: -21.1vw;
+    }
+    .text > h1 {
+        line-height: 3.4vw;
+        margin-left: 5.6vw;
+        letter-spacing: -0.05vw;
+    }
+    /* радар */
+    .radar {
+        width: 15.89vw;
+        height: 15.89vw;
+        background: url(../images/thethird.svg);
+        background-size: cover;
+        margin-top: 62.7vw;
+        margin-left: 0.8vw;
+    }
+    .locator2 {
+        background: url(../images/thethird1.svg);
+        background-size: cover;
+        animation: radar0 3s linear infinite;
+    }
+    .circle2 {
+        background: url(../images/thethird2.svg);
+        background-size: cover;
+        margin-top: -15.8vw;
+        animation: radar1 3s linear infinite;
+    }
+    /* количество спасенных жизней */
+    .lifes {
+        width: 47.8vw;
+        height: 9.43vw;
+        background: url(../images/lifes.svg);
+        background-size: cover;
+        padding: 3.1vw 0;
+        margin-top: -15.8vw;
+        margin-left: 51.7vw;
+    }
+    .lifes >p, .counter {
+        margin-left: 6vw;    
+    }
+    .lifes > p:nth-of-type(1) {
+        font-size: 2.1vw;
+        letter-spacing: -0.015vw;
+    }
+    /* счетчик */
+    .counter {
+        width: 22.7vw;
+        height: 2.6vw;
+        margin-top: 3vw;
+        display: flex;
+    }
+    .l_1, .l_2, .l_3, .l_4, .l_5, .l_6, .l_7, .l_8, .l_9 {
+        font-size: 4.7vw;
+        font-weight: 500;
+        line-height: 2.6vw;
+    }
+    .l_4, .l_7 {
+        margin-left: 2.3vw;
+    }
+}
+
+@media all and (min-width: 321px) and (max-width: 375px){
+    /* ГЛАВНЫЙ ЭКРАН */
+    h1, p, h2, a {
+        color: white;
+    }
+    h1, a {
+        font-size: 3.1vw;
+        letter-spacing: -0.09vw;
+    }
+    /* первая анимированная линия */
+   .line1 {
+        margin: 0 auto;
+        display: flex;
+        padding: 10vw 0;
+   }
+   .line1 > div {
+        border: 0.34vw solid #0076BE;
+        margin-left: 0.4vw;
+        height: 1.3vw;
+   }
+   .line1 > div:nth-of-type(1) {
+        margin-left: 0.5vw;
+   }
+   .line1 > div:nth-of-type(1), .line1 > div:nth-of-type(3) {
+        width: 3.1vw;
+   }
+   .line1 > div:nth-of-type(2) {
+        width: 90.3vw;
+        overflow: hidden;  
+   }
+   .line {
+        width: 91.19vw;
+        height: 1.53vw;
+   }
+   .line0 {
+        width: 181.74vw;
+        height: 100%;
+        background: url(../images/line1.svg); 
+        background-size: cover;
+        animation: line 20s linear infinite;
+    }
+    @keyframes line {
+        0% {transform: translateX(0)}
+        100% {transform: translateX(-50%)}
+    }
+    /* вторая линия с картой */
+    .map, .right_tablo {
+        margin-top: 0.14vw;
+        margin-left: 0.6vw;
+    }
+    .map {
+        height: 44.68vw;
+        width: 98.84vw;
+        background: url(../images/map_1.svg);
+        background-size: cover;
+        margin-top: 55.7vw;
+        padding: 8vw 0;
+    }
+    .map > div {
+        width: 1.6vw;
+        height: 1.14vw;
+        background-color: #D65B34;
+        border-radius: 100%;
+        padding: 0.27vw 0vw;
+    }
+    .map > div:nth-of-type(1) {
+        margin-left: 33.4vw;
+        animation: opac 1s linear infinite;
+    }
+    .map > div:nth-of-type(2) {
+        margin-top: 10.4vw;
+        margin-left: 87.5vw;
+        animation: opac 1s linear infinite;
+    }
+    .map > div:nth-of-type(3) {
+        margin-top: 1.6vw;
+        margin-left: 15.5vw;
+        animation: opac .9s linear infinite;
+    }
+    .map > div:nth-of-type(4) {
+        margin-top: 1vw;
+        margin-left: 56.8vw;
+        animation: opac .9s linear infinite;
+    }
+    .map > div:nth-of-type(5) {
+        margin-top: 8.1vw;
+        margin-left: 45.8vw;
+        animation: opac 1.2s linear infinite;
+    }
+    .map > div:nth-of-type(6) {
+        margin-top: 12.3vw;
+        margin-left: 30.5vw;
+        animation: opac 1s linear infinite;
+    }
+    .map > div:nth-of-type(7) {
+        margin-top: -1.4vw;
+        margin-left: 82.8vw;
+        animation: opac 1.2s linear infinite;
+    }
+    @keyframes opac {
+        0% {opacity:1;}
+        50% {opacity:0;}
+        100% {opacity:1;}
+    }
+    .circle {
+        width: 0.8vw;
+        height: 0.8vw;
+        border: 0.1vw solid #2B2A2B;
+        margin: 0 auto;
+        border-radius: 100%;
+    }
+    .exist {
+        opacity: 1;
+    }
+    .none {
+        opacity: 0;
+    }
+    /* левое табло */
+    /* меню с ссылками */
+    .menu {
+        height: 26.99vw;
+        width: 40.27vw;
+        background: url(../images/text_2.svg);
+        background-size: cover;
+        padding: 3.25vw 0;
+        margin-top: -122.5vw;
+        margin-left: 58.56vw;
+    }
+    a  {
+        text-decoration: none;
+        display: block;
+        margin-left: 3.4vw;
+        margin-top: 4.5vw;
+        border-bottom: 0.27vw solid white;
+        width: 17.7vw;
+        height: 2.8vw;
+    }
+    .menu > a:nth-of-type(1) {
+        margin-top: 0vw;
+        width: 14.2vw;
+    }
+    .menu > a:nth-of-type(4) {
+        width: 31.9vw;
+    }
+    /* радары */
+    .radars {
+        height: 24.1vw;
+        width: 57.36vw;
+        background: url(../images/radars.svg);
+        background-size: cover;
+        padding: 4.5vw 0;
+        display: flex;
+        margin-top: -33.5vw;
+    }
+    /* первый радар */
+    .thefirst, .thesecond {
+        width: 24.33vw;
+        height: 20.3vw;
+        padding: 2vw 0;
+    }
+    .thefirst {
+        margin-left: 3.7vw;
+        background: url(../images/thefirst.svg);
+        background-size: cover;
+    }
+    .thefirst > div, .thesecond > div {
+        width: 20.77vw;
+        height: 20.77vw;
+        margin-left: 1.8vw;
+    }
+    .thefirst > div {
+        background: url(../images/thefirst1.svg);
+        background-size: cover;
+    }
+    .locator0, .locator1, .circle0, .circle1, .locator2, .circle2 {
+        width: 100%;
+        height: 100%;
+    }
+    .circle0, .circle1 {
+        margin-top: -20.8vw;   
+    }
+    .locator0 {
+        background: url(../images/locator0.svg);
+        background-size: cover;
+    }
+    .circle0 {
+        background: url(../images/circle0.svg);
+        background-size: cover;
+    }
+    /* второй радар */
+    .thesecond {
+        margin-left: 0.99vw;
+        background: url(../images/thesecond.svg);
+        background-size: cover;
+    }
+    .thesecond > div {
+        background: url(../images/thesecond1.svg);
+        background-size: cover;
+    }
+    .locator1 {
+        background: url(../images/locator1.svg);
+        background-size: cover;
+    }
+    .circle1 {
+        background: url(../images/circle1.svg);
+        background-size: cover;
+    }
+    /* анимация к радарам */
+    .locator0, .locator1, .circle0, .circle1 {
+        animation: radar0 3s linear infinite;
+    }
+    .circle0, .circle1 {
+        animation: radar1 3s linear infinite;
+    }
+    @keyframes radar0 {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+    }
+    @keyframes radar1 {
+        0% {transform: rotate(0deg); opacity: 1;}
+        25% {opacity: 0;}
+        50% {opacity: 1;}
+        75% {opacity: 0;}
+        100% {transform: rotate(360deg); opacity: 1;}
+    }
+    /* кнопки */
+    .button0, .button1, .polzunok, .polzunok1 {
+        margin-left: 5.8vw;
+    }
+    /* 4 кнопки */
+    .buttons {
+        margin-top: 129.8vw;
+        width: 66.96vw;
+        height: 20.7vw;
+        background: url(../images/buttons_2.svg);
+        background-size: cover;
+        padding: 4.2vw 0;
+        margin-left: 31.8vw;
+    }
+    .button0 {
+        width: 55.2vw;
+        height: 5.6vw;
+        display: flex;
+    }
+    .button0 > div {
+        width: 10vw;
+        margin-left: 3.2vw;
+    }
+    .blue {
+        border: 0.8vw solid #0076BE;
+        background: #2B2A2B;
+    }
+    .orange {
+        background-color: #D65B34;
+        border: 0.31vw solid #D65B34;
+    }
+    .button0 > div:nth-of-type(1) {
+        margin-left: 0;
+    }
+    /* одиночный ползунок */
+    .button1, .polzunok > div, .polzunok1 > div {
+        border: 0.3vw solid #0076BE;
+        padding: 0.5vw 0;
+    }
+    .button1 > div, .p1 {
+        background-color: #0076BE;
+        margin-left: 0.7vw;
+    }
+    .button1,  .p1{
+        height: 0.5vw;
+    }
+    .button1 {
+        width: 54.6vw;
+        margin-top: 2.45vw;
+    }
+    .button1 > div {
+        width: 12vw;
+        height: 0.5vw;
+        animation: polzunok0 3s alternate linear infinite;
+    }
+    .button_1, .c1 {
+        border-radius: 100%;
+        border: 0.7vw solid #D65B34;
+        background: #2B2A2B;
+    }
+    .button_1 {
+        width: 3vw;
+        height: 3vw;
+        margin-top: -3.3vw;
+        margin-left: 38vw;
+        animation: polzunok1 3s alternate linear infinite;
+    }
+    /* первая линия ползунков */
+    .polzunok, .polzunok1 {
+        width: 55.1vw;
+        height: 1.3vw;
+        margin-top: 1.3vw;
+        display: flex;
+    }
+    .polzunok1 {
+        margin-top: 3.56vw;
+    }
+    .polzunok > div, .polzunok1 > div {
+        margin-top: 0.3vw;
+        width: 13vw;
+        height: 0.6vw;
+        margin-left: 1.1vw;
+    }
+    .polzunok > div:nth-of-type(1), .polzunok1 > div:nth-of-type(1) {
+        margin-left: 0;
+    }
+    .p1 {
+        width: 3vw;
+    }
+    .c1 {
+        width: 2.3vw;
+        height: 2.3vw;
+        margin-top: -2.2vw;
+        margin-left: 6.9vw;
+        border: 0.6vw solid #D65B34;
+    }
+    .p_1 {
+        animation: polzunok2 2s alternate linear infinite;
+    }
+    .c_1 {
+        animation: polzunok3 2s alternate linear infinite;
+    }
+    .p_2 {
+        animation: polzunok2 .8s alternate linear infinite;
+    }
+    .c_2 {
+        animation: polzunok3 .8s alternate linear infinite;
+    }
+    .p_3 {
+        animation: polzunok2 3s alternate linear infinite;
+    }
+    .c_3 {
+        animation: polzunok3 3s alternate linear infinite;
+    }
+    /* анимация кнопок */
+    .button0 > div:hover {
+        border: 0.31vw solid #D65B34;
+        transition: all .3s;
+    }
+    @keyframes polzunok0 {
+        0% {width:0vw;}
+        100% {width: 53vw;}
+    }
+    @keyframes polzunok1 {
+        0% {margin-left: 6.4vw;}
+        100% {margin-left: 56vw;}
+    }
+    @keyframes polzunok2 {
+        0% {width:0vw;}
+        100% {width: 10vw;}
+    }
+    @keyframes polzunok3 {
+        0% {margin-left: 0.3vw;}
+        100% {margin-left: 8.7vw;}
+    }
+    /* третья линия с текстом */
+    .text {
+        width: 98.96vw;
+        height: 10.92vw;
+        background: url(../images/text0.svg);
+        background-size: cover;
+        margin-left: 0.5vw;
+        padding: 4.7vw 0;
+        margin-top: -154.7vw;
+    }
+    .text > h1 {
+        font-size: 2.8vw;
+        letter-spacing: -0.088vw;
+        line-height: 3.4vw;
+        margin-left: 5.6vw;    
+    }
+    /* радар */
+    .radar {
+        width: 28.8vw;
+        height: 28.8vw;
+        background: url(../images/thethird.svg);
+        background-size: cover;
+        margin-top: 105.6vw;
+        margin-left: 0.8vw;
+    }
+    .locator2 {
+        background: url(../images/thethird1.svg);
+        background-size: cover;
+        animation: radar0 3s linear infinite;
+    }
+    .circle2 {
+        background: url(../images/thethird2.svg);
+        background-size: cover;
+        margin-top: -28.7vw;
+        animation: radar1 3s linear infinite;
+    }
+    /* количество спасенных жизней */
+    .lifes {
+        width: 98.45vw;
+        height: 18.56vw;
+        background: url(../images/lifes_2.svg);
+        background-size: cover;
+        padding: 6.6vw 0;
+        margin-top: -65vw;
+        margin-left: 0.8vw;
+    }
+    .lifes >p, .counter {
+        margin-left: 12.1vw;    
+    }
+    .lifes > p:nth-of-type(1) {
+        font-size: 3.1vw;
+        letter-spacing: -0.11vw;
+    }
+    /* счетчик */
+    .counter {
+        width: 61vw;
+        height: 2.6vw;
+        margin-top: 6.6vw;
+        display: flex;
+    }
+    .l_1, .l_2, .l_3, .l_4, .l_5, .l_6, .l_7, .l_8, .l_9 {
+        font-size: 9.1vw;
+        font-weight: 500;
+        line-height: 2.6vw;
+    }
+    .l_4, .l_7 {
+        margin-left: 6.3vw;
+    }
+}
+
+
+@media all and (max-width: 320px){
+    /* ГЛАВНЫЙ ЭКРАН */
+    h1, p, h2, a {
+        color: white;
+    }
+    h1, a {
+        font-size: 3.1vw;
+        letter-spacing: -0.09vw;
+    }
+    /* первая анимированная линия */
+   .line1 {
+        margin: 0 auto;
+        display: flex;
+        padding: 1.9vw 0;
+   }
+   .line1 > div {
+        border: 0.34vw solid #0076BE;
+        margin-left: 0.4vw;
+        height: 1.3vw;
+   }
+   .line1 > div:nth-of-type(1) {
+        margin-left: 0.5vw;
+   }
+   .line1 > div:nth-of-type(1), .line1 > div:nth-of-type(3) {
+        width: 3.1vw;
+   }
+   .line1 > div:nth-of-type(2) {
+        width: 90.3vw;
+        overflow: hidden;  
+   }
+   .line {
+        width: 91.19vw;
+        height: 1.53vw;
+   }
+   .line0 {
+        width: 181.74vw;
+        height: 100%;
+        background: url(../images/line1.svg); 
+        background-size: cover;
+        animation: line 20s linear infinite;
+    }
+    @keyframes line {
+        0% {transform: translateX(0)}
+        100% {transform: translateX(-50%)}
+    }
+    /* вторая линия с картой */
+    .map, .right_tablo {
+        margin-top: 0.14vw;
+        margin-left: 0.6vw;
+    }
+    .map {
+        height: 44.68vw;
+        width: 98.84vw;
+        background: url(../images/map_1.svg);
+        background-size: cover;
+        margin-top: 61.4vw;
+        padding: 8vw 0;
+    }
+    .map > div {
+        width: 1.6vw;
+        height: 1.14vw;
+        background-color: #D65B34;
+        border-radius: 100%;
+        padding: 0.27vw 0vw;
+    }
+    .map > div:nth-of-type(1) {
+        margin-left: 33.4vw;
+        animation: opac 1s linear infinite;
+    }
+    .map > div:nth-of-type(2) {
+        margin-top: 10.4vw;
+        margin-left: 87.5vw;
+        animation: opac 1s linear infinite;
+    }
+    .map > div:nth-of-type(3) {
+        margin-top: 1.6vw;
+        margin-left: 15.5vw;
+        animation: opac .9s linear infinite;
+    }
+    .map > div:nth-of-type(4) {
+        margin-top: 1vw;
+        margin-left: 56.8vw;
+        animation: opac .9s linear infinite;
+    }
+    .map > div:nth-of-type(5) {
+        margin-top: 8.1vw;
+        margin-left: 45.8vw;
+        animation: opac 1.2s linear infinite;
+    }
+    .map > div:nth-of-type(6) {
+        margin-top: 12.3vw;
+        margin-left: 30.5vw;
+        animation: opac 1s linear infinite;
+    }
+    .map > div:nth-of-type(7) {
+        margin-top: -1.4vw;
+        margin-left: 82.8vw;
+        animation: opac 1.2s linear infinite;
+    }
+    @keyframes opac {
+        0% {opacity:1;}
+        50% {opacity:0;}
+        100% {opacity:1;}
+    }
+    .circle {
+        width: 0.8vw;
+        height: 0.8vw;
+        border: 0.1vw solid #2B2A2B;
+        margin: 0 auto;
+        border-radius: 100%;
+    }
+    .exist {
+        opacity: 1;
+    }
+    .none {
+        opacity: 0;
+    }
+    /* левое табло */
+    /* меню с ссылками */
+    .menu {
+        height: 26.99vw;
+        width: 40.27vw;
+        background: url(../images/text_2.svg);
+        background-size: cover;
+        padding: 3.25vw 0;
+        margin-top: -121vw;
+        margin-left: 58.8vw;
+    }
+    a  {
+        text-decoration: none;
+        display: block;
+        margin-left: 3.4vw;
+        margin-top: 4.5vw;
+        border-bottom: 0.27vw solid white;
+        width: 17.7vw;
+        height: 2.8vw;
+    }
+    .menu > a:nth-of-type(1) {
+        margin-top: 0vw;
+        width: 14.2vw;
+    }
+    .menu > a:nth-of-type(4) {
+        width: 31.9vw;
+    }
+    /* радары */
+    .radars {
+        height: 24.1vw;
+        width: 57.36vw;
+        background: url(../images/radars.svg);
+        background-size: cover;
+        padding: 4.5vw 0;
+        display: flex;
+        margin-top: -33.8vw;
+    }
+    /* первый радар */
+    .thefirst, .thesecond {
+        width: 24.33vw;
+        height: 20.3vw;
+        padding: 2vw 0;
+    }
+    .thefirst {
+        margin-left: 3.7vw;
+        background: url(../images/thefirst.svg);
+        background-size: cover;
+    }
+    .thefirst > div, .thesecond > div {
+        width: 20.77vw;
+        height: 20.77vw;
+        margin-left: 1.8vw;
+    }
+    .thefirst > div {
+        background: url(../images/thefirst1.svg);
+        background-size: cover;
+    }
+    .locator0, .locator1, .circle0, .circle1, .locator2, .circle2 {
+        width: 100%;
+        height: 100%;
+    }
+    .circle0, .circle1 {
+        margin-top: -20.8vw;   
+    }
+    .locator0 {
+        background: url(../images/locator0.svg);
+        background-size: cover;
+    }
+    .circle0 {
+        background: url(../images/circle0.svg);
+        background-size: cover;
+    }
+    /* второй радар */
+    .thesecond {
+        margin-left: 0.99vw;
+        background: url(../images/thesecond.svg);
+        background-size: cover;
+    }
+    .thesecond > div {
+        background: url(../images/thesecond1.svg);
+        background-size: cover;
+    }
+    .locator1 {
+        background: url(../images/locator1.svg);
+        background-size: cover;
+    }
+    .circle1 {
+        background: url(../images/circle1.svg);
+        background-size: cover;
+    }
+    /* анимация к радарам */
+    .locator0, .locator1, .circle0, .circle1 {
+        animation: radar0 3s linear infinite;
+    }
+    .circle0, .circle1 {
+        animation: radar1 3s linear infinite;
+    }
+    @keyframes radar0 {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+    }
+    @keyframes radar1 {
+        0% {transform: rotate(0deg); opacity: 1;}
+        25% {opacity: 0;}
+        50% {opacity: 1;}
+        75% {opacity: 0;}
+        100% {transform: rotate(360deg); opacity: 1;}
+    }
+    /* кнопки */
+    .button0, .button1, .polzunok, .polzunok1 {
+        margin-left: 5.8vw;
+    }
+    /* 4 кнопки */
+    .buttons {
+        margin-top: 127.2vw;
+        width: 66.96vw;
+        height: 20.7vw;
+        background: url(../images/buttons_2.svg);
+        background-size: cover;
+        padding: 4.2vw 0;
+        margin-left: 32vw;
+    }
+    .button0 {
+        width: 55.2vw;
+        height: 5.6vw;
+        display: flex;
+    }
+    .button0 > div {
+        width: 10vw;
+        margin-left: 3.2vw;
+    }
+    .blue {
+        border: 0.8vw solid #0076BE;
+        background: #2B2A2B;
+    }
+    .orange {
+        background-color: #D65B34;
+        border: 0.31vw solid #D65B34;
+    }
+    .button0 > div:nth-of-type(1) {
+        margin-left: 0;
+    }
+    /* одиночный ползунок */
+    .button1, .polzunok > div, .polzunok1 > div {
+        border: 0.3vw solid #0076BE;
+        padding: 0.5vw 0;
+    }
+    .button1 > div, .p1 {
+        background-color: #0076BE;
+        margin-left: 0.7vw;
+    }
+    .button1,  .p1{
+        height: 0.5vw;
+    }
+    .button1 {
+        width: 54.6vw;
+        margin-top: 2.45vw;
+    }
+    .button1 > div {
+        width: 12vw;
+        height: 0.5vw;
+        animation: polzunok0 3s alternate linear infinite;
+    }
+    .button_1, .c1 {
+        border-radius: 100%;
+        border: 0.7vw solid #D65B34;
+        background: #2B2A2B;
+    }
+    .button_1 {
+        width: 3vw;
+        height: 3vw;
+        margin-top: -3.3vw;
+        margin-left: 38vw;
+        animation: polzunok1 3s alternate linear infinite;
+    }
+    /* первая линия ползунков */
+    .polzunok, .polzunok1 {
+        width: 55.1vw;
+        height: 1.3vw;
+        margin-top: 1.3vw;
+        display: flex;
+    }
+    .polzunok1 {
+        margin-top: 3.56vw;
+    }
+    .polzunok > div, .polzunok1 > div {
+        margin-top: 0.3vw;
+        width: 13vw;
+        height: 0.6vw;
+        margin-left: 1.1vw;
+    }
+    .polzunok > div:nth-of-type(1), .polzunok1 > div:nth-of-type(1) {
+        margin-left: 0;
+    }
+    .p1 {
+        width: 3vw;
+    }
+    .c1 {
+        width: 2.3vw;
+        height: 2.3vw;
+        margin-top: -2.2vw;
+        margin-left: 6.9vw;
+        border: 0.6vw solid #D65B34;
+    }
+    .p_1 {
+        animation: polzunok2 2s alternate linear infinite;
+    }
+    .c_1 {
+        animation: polzunok3 2s alternate linear infinite;
+    }
+    .p_2 {
+        animation: polzunok2 .8s alternate linear infinite;
+    }
+    .c_2 {
+        animation: polzunok3 .8s alternate linear infinite;
+    }
+    .p_3 {
+        animation: polzunok2 3s alternate linear infinite;
+    }
+    .c_3 {
+        animation: polzunok3 3s alternate linear infinite;
+    }
+    /* анимация кнопок */
+    .button0 > div:hover {
+        border: 0.31vw solid #D65B34;
+        transition: all .3s;
+    }
+    @keyframes polzunok0 {
+        0% {width:0vw;}
+        100% {width: 53vw;}
+    }
+    @keyframes polzunok1 {
+        0% {margin-left: 6.4vw;}
+        100% {margin-left: 56vw;}
+    }
+    @keyframes polzunok2 {
+        0% {width:0vw;}
+        100% {width: 10vw;}
+    }
+    @keyframes polzunok3 {
+        0% {margin-left: 0.3vw;}
+        100% {margin-left: 8.7vw;}
+    }
+    /* третья линия с текстом */
+    .text {
+        width: 98.96vw;
+        height: 10.92vw;
+        background: url(../images/text0.svg);
+        background-size: cover;
+        margin-left: 0.3vw;
+        padding: 4.7vw 0;
+        margin-top: -152.7vw;
+    }
+    .text > h1 {
+        font-size: 2.8vw;
+        letter-spacing: -0.088vw;
+        line-height: 3.4vw;
+        margin-left: 5.6vw;    
+    }
+    /* радар */
+    .radar {
+        width: 28.8vw;
+        height: 28.8vw;
+        background: url(../images/thethird.svg);
+        background-size: cover;
+        margin-top: 103.6vw;
+        margin-left: 0.8vw;
+    }
+    .locator2 {
+        background: url(../images/thethird1.svg);
+        background-size: cover;
+        animation: radar0 3s linear infinite;
+    }
+    .circle2 {
+        background: url(../images/thethird2.svg);
+        background-size: cover;
+        margin-top: -28.7vw;
+        animation: radar1 3s linear infinite;
+    }
+    /* количество спасенных жизней */
+    .lifes {
+        width: 98.45vw;
+        height: 18.56vw;
+        background: url(../images/lifes_2.svg);
+        background-size: cover;
+        padding: 6.6vw 0;
+        margin-top: -64.3vw;
+        margin-left: 0.8vw;
+    }
+    .lifes >p, .counter {
+        margin-left: 12.1vw;    
+    }
+    .lifes > p:nth-of-type(1) {
+        font-size: 3.1vw;
+        letter-spacing: -0.11vw;
+    }
+    /* счетчик */
+    .counter {
+        width: 61vw;
+        height: 2.6vw;
+        margin-top: 6.6vw;
+        display: flex;
+    }
+    .l_1, .l_2, .l_3, .l_4, .l_5, .l_6, .l_7, .l_8, .l_9 {
+        font-size: 9.1vw;
+        font-weight: 500;
+        line-height: 2.6vw;
+    }
+    .l_4, .l_7 {
+        margin-left: 6.3vw;
+    }
+}

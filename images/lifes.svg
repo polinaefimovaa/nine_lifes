@@ -1,0 +1,23 @@
+<svg width="469" height="154" viewBox="0 0 469 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="18" y="18" width="433" height="118" fill="url(#paint0_linear_534_8050)" stroke="#0076BE" stroke-width="4"/>
+<rect x="10" y="100" width="10" height="33" transform="rotate(-180 10 100)" fill="#0076BE"/>
+<line x1="5" y1="150.001" x2="5" y2="83.0015" stroke="#0076BE" stroke-width="2"/>
+<line x1="49" y1="149" x2="4.69156" y2="149" stroke="#0076BE" stroke-width="2" stroke-dasharray="7 7"/>
+<line x1="255" y1="149" x2="160.053" y2="149" stroke="#0076BE" stroke-width="2" stroke-dasharray="7 7"/>
+<rect x="44" y="10.001" width="10" height="33" transform="rotate(-90 44 10.001)" fill="#0076BE"/>
+<line x1="4" y1="5" x2="48" y2="5" stroke="#0076BE" stroke-width="2"/>
+<line x1="147" y1="5" x2="259.67" y2="4.99999" stroke="#0076BE" stroke-width="2"/>
+<line x1="5" y1="31" x2="5" y2="5" stroke="#0076BE" stroke-width="2" stroke-dasharray="7 7"/>
+<rect x="432" y="144.001" width="10" height="33" transform="rotate(90 432 144.001)" fill="#0076BE"/>
+<line x1="465" y1="149" x2="426" y2="149" stroke="#0076BE" stroke-width="2"/>
+<line x1="464" y1="122" x2="464" y2="148" stroke="#0076BE" stroke-width="2" stroke-dasharray="7 7"/>
+<rect x="459" y="36.001" width="10" height="33" fill="#0076BE"/>
+<line x1="464" y1="4" x2="464" y2="60" stroke="#0076BE" stroke-width="2"/>
+<line x1="419" y1="5" x2="463" y2="5" stroke="#0076BE" stroke-width="2" stroke-dasharray="7 7"/>
+<defs>
+<linearGradient id="paint0_linear_534_8050" x1="240.521" y1="134.135" x2="239.617" y2="21.3119" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0076BE" stop-opacity="0.22"/>
+<stop offset="1" stop-color="#2B2A2B" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
