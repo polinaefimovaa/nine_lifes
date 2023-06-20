@@ -583,6 +583,10 @@
     .magazine > div:nth-of-type(2) > div:nth-of-type(1), .button_m {
         margin-left: 1.2vw;
     }
+    .calameo-frame {
+        margin: 0 auto;
+        margin-top: 0.7vw;
+    }
     .button_m {
         width: 23.2vw;
     }
