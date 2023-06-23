@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" type="img/x-icon" href="images/favicon_about.svg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Оставить Заявку</title>
+    <link rel="preload" href="images/exterior.svg" as="image">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/common.css">
+    <link rel="stylesheet" href="stylesheets/request.css">
+    <style media = "screen">
+      html {
+        display: block;
+        height: 100%;   
+      }
+      body {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        background: #2B2A2B;
+      }
+      /* body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:100%;
+        height: 100%;
+        background: url(images/maket.png);
+        opacity: .6;
+      }  */
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src ="javascripts/all.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  </head>
+  <body>
+    <!-- первая анимированная линия -->
+    <div class="line1 line_1">
+      <div><h1>Оставить заявку</h1></div>
+      <div class = "line">
+        <div class="line0"></div>
+      </div>
+      <div><h1 class = "menu_button">Меню</h1></div>
+    </div>
+    <!-- меню -->
+    <div class="menu me none">
+      <a href="index.html">Главная —></a>
+      <a href="about.html">О нас —></a>ы
+      <a href="news.html">Новости —></a>
+      <a href="shop.html">Магазин —></a>
+    </div>
+   <div class="main">
+      <!-- первый блок с текстом и кнопками -->
+    <div class="request1">
+      <div><h1>Чтобы стать клиентом нашего агентства, заполните следующую анкету. В ближайшее время с вами свяжутся и зарегистрируют вас!</h1></div>
+      <div class = "panel">
+          <div>
+              <div class="polzunok">
+                  <div>
+                    <div class="p1 p_1"></div>
+                    <div class="c1 c_1"></div>
+                  </div>
+              </div>
+              <div class="polzunok">
+                  <div>
+                    <div class="p1 p_2"></div>
+                    <div class="c1 c_2"></div>
+                  </div>
+              </div>
+              <div class="polzunok">
+                  <div>
+                    <div class="p1 p_3"></div>
+                    <div class="c1 c_3"></div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <div class="button0">
+                  <div class = "b0 blue"></div>
+                  <div class = "b0 blue"></div>
+                  <div class = "b0 blue"></div>
+                  <div class = "b0 blue"></div>
+                </div>
+                <div class="button0">
+                  <div class = "b0 blue"></div>
+                  <div class = "b0 blue"></div>
+                  <div class = "b0 blue"></div>
+                  <div class = "b0 blue"></div>
+                </div>
+                <div class="button0">
+                  <div class = "b0 blue"></div>
+                  <div class = "b0 blue"></div>
+                  <div class = "b0 blue"></div>
+                  <div class = "b0 blue"></div>
+                </div>
+          </div>
+      </div>
+  </div>
+  <!-- блок с заявкой и фотографией -->
+  <div class="request2">
+  <form class="" action="index.html" method="post">
+      <h1>Заполните заявку:</h1>
+      <h3>Как к вам обращаться?</h3>
+      <div>
+          <input type="text" name="" value="" placeholder="Имя">
+          <input type="text" name="" value="" placeholder="Фамилия">
+      </div>
+      <h3>Род вашей деятельности:</h3>
+      <select class="" name="">
+          <option value="">Выберите из списка</option>
+          <option value="">аквалангист, моряк, спасатель</option>
+          <option value="">пожарный, сварщик, кузнец</option>
+          <option value="">шахтер, строитель</option>
+          <option value="">парашютист, летчик, альпинист</option>
+          <option value="">полицейский, врач, спасатель</option>
+      </select>
+      <h3>Электронная почта:</h3>
+      <input type="email" name="" value="" placeholder="Email">
+      <h3>Номер телефона:</h3>
+      <input type="email" name="" value="" placeholder="Номер">
+      <h3>Где лучше с нами связаться?</h3>
+      <div class="radio">
+          <input class = "radio" type="radio" id="first" name="verify" value="">
+          <label class = "radio_0"for="first"></label>
+          <label class = "radio_text" for="first">по почте</label> 
+      </div>
+      <div class="radio r_2">
+          <input class = "radio" type="radio" id="second" name="verify" value="">
+          <label class ="radio_0" for="second"></label>
+          <label class = "radio_text" for="second">по номеру телефона</label>
+      </div>
+      <button type="submit" name="button">Отправить заявку —></button>
+      <div></div>
+  </form>
+  <div></div>
+  </div>
+  <!-- последняя анимированная линия -->
+  <div class="line1 line_3 l_news">
+  <div></div>
+  <div class = "line">
+  <div class="line0"></div>
+  </div>
+  <div></div>
+  </div>
+  <div class = "end"></div>
+   </div>
+  </body>
+</html>

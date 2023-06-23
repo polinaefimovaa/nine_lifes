@@ -1,0 +1,182 @@
+@media all and (min-width: 835px) { 
+    /* первая панель с текстом и кнопками */
+    .request1, .panel, .request2 {
+        display: flex;
+        margin-left: 0.3vw;
+    }
+    .request1 {
+        margin-top: 1vw;
+        width: 99.5vw;
+        height: 9.8vw;
+    }
+    .request1 > div:nth-of-type(1) {
+        width: 47.38vw;
+        height: 55.1%;
+        padding: 2.2vw 0;
+        background: url(../images/request_text1.svg);
+        background-size: cover;
+    }
+    .request1 > div:nth-of-type(1) > h1 {
+        width: 42vw;
+        margin-left: 2.7vw;
+        line-height: 109%;
+    }
+    .request1 > div:nth-of-type(2) {
+        width: 51.4vw;
+        height: 100%;
+        background: url(../images/request_text2.svg);
+        background-size: cover;
+        margin-left: 1vw;
+    }
+    .panel {
+        width: 10vw;
+        height: 10vw;
+        background-color: blueviolet;
+    }
+    .panel > div:nth-of-type(1) {
+        width: 25.3vw;
+        height: 10vw;
+    }
+    .polzunok {
+        margin-left: 2vw;
+        margin-top: 1vw;
+    }
+    .panel > div:nth-of-type(1) > div:nth-of-type(1) {
+        margin-top: 1.78vw;
+        
+    }
+    .polzunok > div {
+        margin-top: 0.1vw;
+        width: 23.1vw;
+        height: 0.2vw;
+    }
+    .panel > div:nth-of-type(2) {
+        width: 20vw;
+        height: 10vw;
+        margin-left: 3.2vw;
+    }
+    .panel > div:nth-of-type(2) > div:nth-of-type(1) {
+         margin-top: 1.3vw;    
+    }
+    .button0 {
+        width: 100%;
+        margin-left: 0vw;
+        margin-top: 0.35vw;
+    }
+    /* блок с заявкой и фотографией */
+    .request2 {
+        width: 99.5vw;
+        height: 39.3vw;
+        margin-top: 0.5vw;
+    }
+    form {
+        margin-top: 0.2vw;
+        width: 28.55vw;
+        height: 86.2%;
+        background: url(../images/request_text3.svg);
+        background-size: cover;
+        padding: 2.6vw 0;
+    }
+    form > h1, form > h3, select {
+        margin-left: 3vw;
+    }
+    .request2 > div:nth-of-type(1) {
+        width: 70vw;
+        height: 100%;
+        background: url(../images/request_photo.svg);
+        background-size: cover;
+        margin-left: 1vw;
+    }
+    form > h3 {
+        margin-top: 1.4vw;
+    }
+    form > div:nth-of-type(1), input {
+        margin-top: 0.7vw;
+        margin-left: 3vw;
+    }
+    form > div:nth-of-type(1) > input {
+        margin-top: 0.0vw;
+        margin-left: 0vw;
+    }
+    input, select, option {
+        border: 0.2vw solid #0076BE;
+        background-color: #2B2A2B;
+        height: 1.4vw;
+        padding: 0 0.81vw;
+        font-size: 0.8vw;
+        width: 8.46vw;
+    }
+    select {
+        margin-top: 0.7vw;
+        height: 1.7vw;
+        width: 22.5vw;
+        color: white;
+        padding: 0 0.6vw;
+    }
+    form > div:nth-of-type(1) > input:nth-of-type(2) {
+        margin-left: 1.1vw
+    }
+    form > h3:nth-of-type(2) {
+        margin-top: 1.65vw;
+    }
+    .placeholder {
+        margin-left: 2vw;
+    }
+    option {
+        color: white;
+        
+    }
+    form > h3:nth-of-type(3), form > h3:nth-of-type(4) {
+        margin-top: 1.7vw;
+    }
+    form > input:nth-of-type(1), form > input:nth-of-type(2) {
+        margin-top: 0.6vw;
+    }
+    form > h3:nth-of-type(5) {
+        margin-top: 1.7vw;
+    }
+    .radio {
+        display: flex;
+        margin-top: 0.6vw;
+        margin-left: 3vw;
+    }
+    .radio > input {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+    .radio > label:nth-of-type(1){
+        width: 1.5vw;
+        height: 1.4vw;
+        border-radius: 0%;
+        border: 0.2vw solid #0076BE;
+        background-color: #2B2A2B;
+    }
+    .radio:checked + .radio_0 {
+        background-color: #0076BE;
+    }
+    .radio_text {
+        color: white;
+        font-size: 1vw;
+        margin-top: 0.3vw;
+        margin-left: 0.7vw;
+        letter-spacing: -0.04vw;
+    }
+    .r_2 {
+        margin-top: 0.8vw;
+    }
+    button {
+        border: none;
+        margin-top: 1.6vw;
+        margin-left: 3vw;
+        width: 16.5vw;
+        height: 2.6vw;
+        background-color: #D65B34;
+        font-size: 1vw;
+        color: white;
+        font-weight: 700;
+    }
+    .menu > a:nth-of-type(4) {
+        width: 9.2vw;
+    }
+}

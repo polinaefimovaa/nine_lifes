@@ -1,0 +1,165 @@
+@media all and (min-width: 835px) { 
+    .textandbuttons, .goods_photo1, .goods_text1 {
+        display: flex;
+        margin-left: 0.3vw;
+    }
+    /* первый экран — фото */
+    .shop_photo {
+        width: 99.5vw;
+        height: 44.4vw;
+        margin-top: 1.4vw;
+        background: url(../images/shop_text1.svg);
+        background-size: cover;
+        padding: 1.3vw 0;
+    }
+    .shop_photo > div{
+        border: 0.2vw solid #0076BE;
+    }
+    .shop_photo > div{
+        width: 95.9vw;
+        height: 44.2vw;
+        margin-left: 1.6vw;
+        background: url(../images/shop_photo1.svg);
+        background-size: cover;
+    }
+    /* текст и кнопки */
+    .textandbuttons {
+        width: 99.5vw;
+        height: 10.8vw;
+        margin-top: 1.2vw;
+    }
+    .textandbuttons > div:nth-of-type(1) {
+        width: 52.3vw;
+        height: 54.1%;
+        background: url(../images/shop_text2.svg);
+        background-size: cover;
+        padding: 2.5vw 0;
+    }
+    .textandbuttons > div:nth-of-type(2) {
+        width: 46.2vw;
+        height: 100%;
+        background: url(../images/shop_text3.svg);
+        background-size: cover;
+        margin-left: 1.1vw;
+    }
+    .textandbuttons > div:nth-of-type(1) > h1 {
+        width: 46vw;
+        margin-left: 3vw;
+        letter-spacing: -0.044vw;
+        line-height: 110%;
+    }
+    .textandbuttons > div:nth-of-type(2) > .polzunok_1 {
+        margin-left: 2.4vw;
+        margin-top: 2vw;
+        width: 42vw;
+    }
+    .textandbuttons > div:nth-of-type(2) > .polzunok_1 > div:nth-of-type(2) {
+        margin-left: 2.34vw;
+    }
+    .textandbuttons > div:nth-of-type(2) > div:nth-of-type(2) {
+        margin-top: 1.6vw;
+    }
+    .textandbuttons > div:nth-of-type(2) > .button_01 {
+        margin-left: 2.3vw;
+        margin-top: 1.2vw;
+        height: 2.1vw;
+    }
+    .button_01 {
+        width: 42vw;
+    }
+    .button_01 > div:nth-of-type(5){
+        margin-left: 2.3vw;
+    }
+    /* первый ряд фото товаров */
+    .goods_photo1, .goods_text1 {
+        width: 99vw;
+    }
+    .goods_photo1 {
+        height: 38.3vw;
+        margin-top: 1.1vw;
+    }
+    .goods_photo1 > div, .goods_text1 > div {
+        width: 32.3vw;
+        height: 100%;
+        margin-left: 1vw;
+    }
+    .goods_photo1 > div:nth-of-type(1) {
+        margin-left: 0vw;
+        background: url(../images/shop_photo2.svg);
+        background-size: cover;
+    }
+    .goods_photo1 > div:nth-of-type(2) {
+        background: url(../images/shop_photo3.svg);
+        background-size: cover;
+    }
+    .goods_photo1 > div:nth-of-type(3) {
+        background: url(../images/shop_photo4.svg);
+        background-size: cover;
+    }
+    /* надписи к первому ряду */
+    .goods_text1 {
+        height: 7vw;
+        margin-top: 1vw;
+    }
+    .goods_text1 > a {
+        height: 49%;
+        background: url(../images/shop_text4.svg);
+        background-size: cover;
+        padding: 1.7vw 0;
+        width: 100%;
+    }
+    .goods_text1 > a > h2, .goods_text1 > a > div > h1 {
+        font-weight: 400;
+    }
+    .goods_text1 > div {
+        height: 50.4%;
+        background: url(../images/shop_text4.svg);
+        background-size: cover;
+        padding: 1.7vw 0;
+    }
+    .goods_text1 > div:nth-of-type(1), .goods_text1 > a:nth-of-type(1) {
+        margin-left: 0vw;
+    }
+    .goods_text1 > div > div,.goods_text1 > a > div   {
+        margin-left: 1.7vw;
+        display: flex;
+    }
+    .g_t {
+        margin-left: 3.2vw;
+    }
+    /* .goods_text1 > div:nth-of-type(1) > div > h1:nth-of-type(2) {
+        margin-left: 16.9vw;
+    } */
+    .goods_text1 > div > h2, .goods_text1 > a > h2 {
+        margin-top: 0.2vw;
+        margin-left: 1.7vw;
+        letter-spacing: -0.039vw;
+    }
+    .gt0 {
+        margin-left: 17vw;
+    }
+    .gt {
+        margin-left: 15vw;
+    }
+    .gt1 {
+        margin-left: 7vw;
+    }
+    .gt2 {
+        margin-left: 4vw;
+    }
+    /* второй ряд фото товаров */
+    .ph_2 > div:nth-of-type(1) {
+        margin-left: 0vw;
+        background: url(../images/shop_photo5.svg);
+        background-size: cover;
+    }
+    .ph_2 > div:nth-of-type(2) {
+        background: url(../images/shop_photo6.svg);
+        background-size: cover;
+    }
+    .ph_2 > div:nth-of-type(3) {
+        background: url(../images/shop_photo7.svg);
+        background-size: cover;
+    }  
+    /* надписи ко второму ряду */
+}

@@ -1,0 +1,281 @@
+@media all {
+    h1, p, h2, a, h3,h4 {
+        color: white;
+    }
+}
+@media all and (min-width: 1280px) {
+    a, .b0, .right_tablo_1 > div:nth-of-type(2), .button_m > div, .back, .forward{
+        cursor: url('../images/active_cursor.png'), auto;
+    }
+}
+@media all {  
+    
+    h1 {
+        font-size: 1.46vw;
+        letter-spacing: -0.05vw;
+        line-height: 104%;
+    }
+    h2 {
+        font-size: 1.1vw;
+        letter-spacing: -0.039vw;
+        line-height: 158%;
+    }
+    .photo, .about_text, .line_2 > div:nth-of-type(1), .control, .control_1, .air, .land, .water, .fire, .magazine, .line_3 > div:nth-of-type(1) {
+        margin-left: 0.6vw;
+    }
+    .control_room_photo {
+        border: 0.2vw solid #0076BE;
+    }
+    /* первая анимированная линия */
+    .line_1 {
+        height: 2.1vw;
+        padding: 0.5vw 0;
+    }
+    .line_1 > div:nth-of-type(1), .line_1 > div:nth-of-type(3) {
+        width: 17.13vw;
+        padding: 0.2vw 0;
+        height: 1.7vw;
+    }
+    .line1 > div {
+        height: 100%;
+    }
+    .line_1 > div:nth-of-type(2) {
+        width: 87.7vw;
+    }
+    .line_1 > div:nth-of-type(3) {
+        margin-right: 0.6vw;
+    }
+    .line_1 > div > h1 {
+        margin-left: 0.2vw
+    }
+    .line_1 > div:nth-of-type(3) > h1 {
+        margin-left: 9.35vw;    
+    }
+    /* меню */
+    .me {
+
+        margin-left: 75.3vw;
+        height: 15.3vw;
+        width: 24.03vw;
+        padding: 2.4vw 0;
+        background: url(../images/menu.svg);
+        background-size: cover;
+        margin-top: 1vw;
+    }
+    .me > a {
+        font-size: 1.55vw;
+        letter-spacing: -0.03vw;
+        font-weight: 400;
+        text-decoration: none;
+        display: block;
+        margin-left: 3.2vw;
+        margin-top: 2.8vw;
+        border-bottom: 0.12vw solid white;
+        width: 9.3vw;
+        height: 1.4vw;
+    }
+    .me > a:nth-of-type(1) {
+        margin-top: 0vw;
+        width: 9vw;
+    }
+    .none {
+        display: none;
+    }
+    /* кнопки */
+    .button_01 {
+        height: 2.6vw;
+        width: 40vw;
+        display: flex;
+    }
+    .button_01 > div {
+        width: 3.47vw;
+        margin-left: 1.1vw;
+    }
+    .button_01 > div:hover, .button_02 > div:hover, .button_03 > div:hover {
+        border: 0.31vw solid #D65B34;
+        transition: all .3s;
+    }
+    .button_01 > div:nth-of-type(1) {
+        margin-left: 0vw;
+    }
+    /* большое фото, почти на всю страницу */
+    .control_room {
+        width: 74.5vw;
+        height: 94.6%;
+        margin-left: 1vw;
+        background: url(../images/control_room1.svg);
+        background-size: cover;
+        padding: 1.2vw 0;
+    }
+    .control_room_photo {
+        width: 71.7vw;
+        height: 99.2%;
+        margin-left: 1.25vw;
+        background: url(../images/control_room_photo.svg);
+        background-size: cover;
+        transition: .5s;
+    }
+    /* блок текста с кнопкой */
+    .left_tablo > div:nth-of-type(1), .right_tablo_1 > div:nth-of-type(1), .left_tablo_2 > div:nth-of-type(1), .magazine > div:nth-of-type(2) > div:nth-of-type(1)  {
+        width: 100%;
+        height: 14.94vw;
+        background: url(../images/about_text3.svg);
+        background-size: cover;
+        padding: 2.55vw 0;
+    }
+    .right_tablo_1 {
+        height: 100%;
+        width: 23.2vw;
+        margin-left: 1.1vw;
+    }
+    .right_tablo_1 > div:nth-of-type(1) > h2, .magazine > div:nth-of-type(2) > div:nth-of-type(1) > h2 {
+        margin-top: 2.79vw;
+    }
+    .right_tablo_1 > div:nth-of-type(2), .button_m {
+        height: 6.4vw;
+        width: 100%;
+        background: url(../images/about_button.svg);
+        background-size: cover;
+        margin-top: 0.9vw;
+        padding: 0.9vw 0;
+    }
+    .right_tablo_1 > div:nth-of-type(2) > div, .button_m > div  {
+        height: 2.8vw;
+        width: 20.8vw;
+        background: #D65B34;
+        margin-left: 1.2vw;
+        padding: 1.7vw 0;
+    }
+    .left_tablo > div:nth-of-type(1) > h1, .left_tablo > div:nth-of-type(1) > h2, .right_tablo_1 > div:nth-of-type(1) > h1, .right_tablo_1 > div:nth-of-type(1) > h2, .left_tablo_2 > div:nth-of-type(1) > h1, .left_tablo_2 > div:nth-of-type(1) > h2, .magazine > div:nth-of-type(2) > div:nth-of-type(1) > h1, .magazine > div:nth-of-type(2) > div:nth-of-type(1) > h2 {
+        margin-left: 2.25vw;
+    }
+    a {
+        width: 18vw;
+        height: 3vw;
+        margin-top: 0vw;
+        margin-left: 1.7vw;
+        font-size: 1.3vw;
+        font-weight: 700;
+        letter-spacing: 0.05vw;
+        line-height: 114%;
+        border-bottom: none;
+    }
+    /* анимированная линия */
+    .line_2, .line_3 {
+        height: 1.3vw;
+        margin-top: 0.7vw;
+    }
+    .line_2 > div, .control_photo > div, .left_tablo_2 > div:nth-of-type(2) > div, .air > div:nth-of-type(2) > div, .air > div:nth-of-type(3) > div, .land > div:nth-of-type(1) > div, .land > div:nth-of-type(2) > div, .right_tablo_2 > div:nth-of-type(2) > div, .left_tablo_3 > div:nth-of-type(2) > div, .water > div:nth-of-type(2) > div, .water > div:nth-of-type(3) > div, .fire > div:nth-of-type(2) > div, .magazine > div:nth-of-type(1) > div, .line_3 > div{
+        border: 0.2vw solid #0076BE;
+    }
+    .line_2 > div:nth-of-type(1), .line_2 > div:nth-of-type(3), .line_3 > div:nth-of-type(1), .line_3 > div:nth-of-type(3) {
+        width: 3.3vw;
+    }
+    .line_2 > div:nth-of-type(2), .line_3 > div:nth-of-type(2) {
+        width: 90.5vw;
+    }
+    /* конец */
+    .end {
+        height: 1.5vw;
+        width: 100%;
+    }
+    /* ползунок */
+
+    .button_01, .polzunok_1 {
+        margin-left: 3.02vw;
+    }
+    .polzunok_1 {
+        display: flex;
+        width: 39.96vw;
+        height: 0.87vw;
+        margin-top: 1.2vw;
+    } 
+    .polzunok_1 > div {
+        width: 19.23vw;
+        border: 0.13vw solid #0076BE;
+        padding: 0.24vw 0;
+    }
+    .p1 {
+        width: 18.5vw;
+        height: 0.23vw;
+    }
+    .polzunok_1 > div:nth-of-type(2) {
+        margin-left: 1.1vw;
+    }
+    .c1 {
+        width: 1.4vw;
+        height: 1.4vw;
+        margin-top: -1.1vw;
+    }
+    .p_01 {
+        animation: polzunok2 2s alternate linear infinite;
+    }
+    .c_01 {
+        animation: polzunok3 2s alternate linear infinite;
+    }
+    .p_2 {
+        animation: polzunok2 .8s alternate linear infinite;
+    }
+    .c_02 {
+        animation: polzunok3 .8s alternate linear infinite;
+    }
+    @keyframes polzunok2 {
+        0% {width:0%;}
+        100% {width: 88%;}
+    }
+    @keyframes polzunok3 {
+        0% {margin-left: 0%;}
+        100% {margin-left: 88%;}
+    }
+}
+@media all and (min-width: 321px) and (max-width: 834px){
+    h1 {
+        font-size: 2.7vw;
+    }
+    h2 {
+        font-size: 1.9vw;
+        letter-spacing: -0.146vw;
+        line-height: 154%;
+    }
+    .line_1 {
+        height: 3.6vw;
+        padding: 1.5vw 0;
+    }
+    .line_1 > div:nth-of-type(1), .line_1 > div:nth-of-type(3) {
+        width: 23.9vw;
+        padding: 0.6vw 0;
+        height: 79%;    
+    }
+    .line_1 > div:nth-of-type(2) {
+        width: 47.7vw;
+        height: 4vw;
+    }
+    .line_1 > div > h1 {
+        margin-left: 1vw;
+    }
+    .line_1 > div:nth-of-type(3) > h1 {
+        margin-left: 16.2vw;
+    }
+    .me {
+        margin-left: 68.3vw;
+        height: 20.7vw;
+        width: 31.13vw;
+        padding: 2.7vw 0;
+    }
+    .me > a {
+        font-size: 2.4vw;
+        height: 2.5vw;
+        margin-top: 3.1vw;
+        width: 14.1vw;
+    }
+    .me > a:nth-of-type(1) {
+        width: 14.1vw;    
+    }
+    .me > a:nth-of-type(2) {
+        width: 11.3vw;
+    }
+    .menu > a:nth-of-type(4) {
+        width: 25.4vw;
+    }
+
+}
