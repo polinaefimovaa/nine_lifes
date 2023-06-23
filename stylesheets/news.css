@@ -1,4 +1,4 @@
-@media all {  
+@media all and (min-width: 1px) {  
     .thebeginning, .web_poster, .firstposters_1, .firstposters_2, .secondposters, .thirdposters {
         display: flex;
         margin-left: 0.6vw;
